@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">PiggyCash</string>
+    <string name="piggy">Piggy</string>
+    <string name="cash">Cash</string>
+    <string name="saldo">Saldo Restante</string>
+    <string name="saldo_exemplo">R$ 98200</string>
+    <string name="adicionar_dinheiro">Adicionar</string>
+    <string name="retirar_dinheiro">Retirar</string>
+    <string name="transacoes_recentes">Transações Recentes</string>
+    <string name="ver_todos">Ver Todos</string>
+    <string name="nome1">Lanche Faria Lima</string>
+    <string name="preco1">- R$24,00</string>
+    <string name="data_hora1">12:31 AM / Ago 30</string>
+    <string name="email">E-mail</string>
+    <string name="senha">Senha</string>
+    <string name="login">Login</string>
+    <string name="cadastro">Cadastre-se</string>
+    <string name="subtitulo">Controle financeiro na palma da mão</string>
+</resources>

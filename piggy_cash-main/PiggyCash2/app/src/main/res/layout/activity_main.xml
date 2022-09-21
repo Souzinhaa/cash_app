@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint_card"
+        android:layout_width="match_parent"
+        android:layout_height="200sp"
+        android:layout_marginTop="@dimen/vintesp"
+        android:layout_marginLeft="@dimen/vintesp"
+        android:layout_marginRight="@dimen/vintesp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+        <ImageView
+            android:id="@+id/img_card"
+            android:src="@drawable/card_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+        <TextView
+            android:id="@+id/text_balanco"
+            android:text="@string/saldo"
+            android:textSize="@dimen/vintesp"
+            android:drawableRight="@drawable/ic_arrow_forward"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/vintesp"
+            android:layout_marginLeft="@dimen/vintesp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+        <TextView
+            android:id="@+id/text_valor"
+            android:text="@string/saldo_exemplo"
+            android:textSize="@dimen/vintesp"
+            android:textColor="@color/white"
+            android:layout_marginBottom="@dimen/vintesp"
+            android:layout_marginLeft="@dimen/vintesp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+        <ImageView
+            android:id="@+id/img_money"
+            android:src="@drawable/ic_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/vintesp"
+            android:layout_marginRight="@dimen/vintesp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/img_add_money"
+        android:src="@drawable/add_money_background"
+        android:layout_width="150sp"
+        android:layout_height="80sp"
+        android:layout_marginTop="@dimen/vintesp"
+        app:layout_constraintTop_toBottomOf="@id/constraint_card"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/img_retire_money"/>
+
+    <TextView
+        android:id="@+id/text_add_money"
+        android:textSize="@dimen/vintesp"
+        android:drawableRight="@drawable/ic_add_money"
+        android:text="@string/adicionar_dinheiro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/img_add_money"
+        app:layout_constraintBottom_toBottomOf="@id/img_add_money"
+        app:layout_constraintLeft_toLeftOf="@id/img_add_money"
+        app:layout_constraintRight_toRightOf="@id/img_add_money"/>
+
+    <ImageView
+        android:id="@+id/img_retire_money"
+        android:src="@drawable/retire_money_background"
+        android:layout_width="150sp"
+        android:layout_height="80sp"
+        app:layout_constraintTop_toTopOf="@id/img_add_money"
+        app:layout_constraintLeft_toRightOf="@id/img_add_money"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/text_retire_money"
+        android:textSize="@dimen/vintesp"
+        android:drawableRight="@drawable/ic_retire_money"
+        android:text="@string/retirar_dinheiro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/img_retire_money"
+        app:layout_constraintBottom_toBottomOf="@id/img_retire_money"
+        app:layout_constraintLeft_toLeftOf="@id/img_retire_money"
+        app:layout_constraintRight_toRightOf="@id/img_retire_money"/>
+
+    <TextView
+        android:id="@+id/text_transacoes"
+        android:textSize="@dimen/vintesp"
+        android:text="@string/transacoes_recentes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/trintasp"
+        android:layout_marginTop="@dimen/vintesp"
+        app:layout_constraintTop_toBottomOf="@id/img_add_money"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:id="@+id/text_transacoes_all"
+        android:textSize="18sp"
+        android:text="@string/ver_todos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/trintasp"
+        app:layout_constraintTop_toTopOf="@id/text_transacoes"
+        app:layout_constraintBottom_toBottomOf="@id/text_transacoes"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint_transacao_1"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:layout_marginTop="@dimen/vintesp"
+        app:layout_constraintTop_toBottomOf="@id/text_transacoes"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="parent">
+
+        <ImageView
+            android:id="@+id/img_transacao_1"
+            android:src="@drawable/ic_add_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/vintesp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/text_nome_transacao_1"
+            android:text="@string/nome1"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/img_transacao_1"/>
+
+        <TextView
+            android:id="@+id/text_data_hora_transacao_1"
+            android:text="@string/data_hora1"
+            android:textSize="13sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/text_nome_transacao_1"
+            app:layout_constraintLeft_toLeftOf="@id/text_nome_transacao_1"
+            app:layout_constraintRight_toRightOf="@id/text_nome_transacao_1"/>
+
+        <TextView
+            android:id="@+id/text_valor_transacao_1"
+            android:text="@string/preco1"
+            android:textSize="18sp"
+            android:layout_marginRight="@dimen/vintesp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

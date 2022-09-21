@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "790201664855",
+    "project_id": "piggycash-dd6ce",
+    "storage_bucket": "piggycash-dd6ce.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:790201664855:android:e2e098c9f12d11e6012a12",
+        "android_client_info": {
+          "package_name": "com.fho.piggycash"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "790201664855-lf4mqvolo51sv7umms3uhr3gsih1nr1h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCB-o0CU8B7dD0e20_7RsG4IeSGJNbm9B8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "790201664855-lf4mqvolo51sv7umms3uhr3gsih1nr1h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
