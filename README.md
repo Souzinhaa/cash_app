@@ -6,10 +6,17 @@ Essa aplicação tem como objetivo dar ao usuario controle financeiro de seus ga
 
 ## Integrantes
 -------------- NOME --------------- / - RA -
+
 Adrian Tetzner Filgueira            - 109637
+
 Bruno Henrique de Souza Pinto       - 110402
+
 Felipe Corbanezi                    - 110192
+
 Gabriel Alexandre Neves de Paula    - 109711
+
 Hyan Vincent                        - 109765
+
 Lucas Leveghin                      - 109081
+
 Lucas Bevilaqua Araujo de Oliveira  - 110601
