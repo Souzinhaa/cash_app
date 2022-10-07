@@ -13,7 +13,9 @@
     <string name="data_hora1">12:31 AM / Ago 30</string>
     <string name="email">E-mail</string>
     <string name="senha">Senha</string>
+    <string name="nome">Nome</string>
     <string name="login">Login</string>
+    <string name="Cadastrar">Cadastrar</string>
     <string name="cadastro">Cadastre-se</string>
     <string name="subtitulo">Controle financeiro na palma da mão</string>
 </resources>

@@ -36,10 +36,12 @@ drawable ic_money
 drawable ic_retire_money
 drawable retire_money_background
 font inter
+id bt_cadastrar
 id bt_login
 id constraint_card
 id constraint_transacao_1
 id edit_email
+id edit_nome
 id edit_senha
 id img_add_money
 id img_card
@@ -62,10 +64,12 @@ id text_valor
 id text_valor_transacao_1
 layout activity_login_screen
 layout activity_main
+layout activity_sign_in_screen
 layout fragment_main
 layout fragment_transacoes
 mipmap ic_launcher
 mipmap ic_launcher_round
+string Cadastrar
 string adicionar_dinheiro
 string app_name
 string cadastro
@@ -79,6 +83,7 @@ string google_app_id
 string google_crash_reporting_api_key
 string google_storage_bucket
 string login
+string nome
 string nome1
 string piggy
 string preco1

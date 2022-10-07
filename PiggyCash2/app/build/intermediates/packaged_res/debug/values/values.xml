@@ -35,6 +35,7 @@
     <color name="white">#FFFFFFFF</color>
     <dimen name="trintasp">30sp</dimen>
     <dimen name="vintesp">20sp</dimen>
+    <string name="Cadastrar">Cadastrar</string>
     <string name="adicionar_dinheiro">Adicionar</string>
     <string name="app_name">PiggyCash</string>
     <string name="cadastro">Cadastre-se</string>
@@ -48,6 +49,7 @@
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAVDk2LqSUJRfGV3i8HWKt8_oLUwvu7Na4</string>
     <string name="google_storage_bucket" translatable="false">piggy-cash-c9be0.appspot.com</string>
     <string name="login">Login</string>
+    <string name="nome">Nome</string>
     <string name="nome1">Lanche Faria Lima</string>
     <string name="piggy">Piggy</string>
     <string name="preco1">- R$24,00</string>

@@ -54,8 +54,7 @@ public class LoginScreen extends AppCompatActivity {
         text_cadastro.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                //telaCadastro();
-                ToastUtil.showToast(v, "Não Habilitado!");
+                telaCadastro();
             }
         });
     }
@@ -93,6 +92,12 @@ public class LoginScreen extends AppCompatActivity {
 
     private void telaPrincipal(){
         Intent intent = new Intent(LoginScreen.this, MainActivity.class);
+        startActivity(intent);
+        finish();
+    }
+
+    private void telaCadastro(){
+        Intent intent = new Intent(LoginScreen.this, SignInScreen.class);
         startActivity(intent);
         finish();
     }

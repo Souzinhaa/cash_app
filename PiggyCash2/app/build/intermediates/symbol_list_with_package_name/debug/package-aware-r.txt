@@ -2689,6 +2689,7 @@ id browser_actions_menu_item_icon
 id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
+id bt_cadastrar
 id bt_login
 id buttonPanel
 id cache_measures
@@ -2772,6 +2773,7 @@ id easeInOut
 id easeOut
 id east
 id edit_email
+id edit_nome
 id edit_query
 id edit_senha
 id edittext_dropdown_editable
@@ -3199,6 +3201,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_login_screen
 layout activity_main
+layout activity_sign_in_screen
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
 layout custom_dialog
@@ -3297,6 +3300,7 @@ mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
 raw firebase_common_keep
+string Cadastrar
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description
@@ -3447,6 +3451,7 @@ string mtrl_picker_toggle_to_day_selection
 string mtrl_picker_toggle_to_text_input_mode
 string mtrl_picker_toggle_to_year_selection
 string mtrl_timepicker_confirm
+string nome
 string nome1
 string password_toggle_content_description
 string path_password_eye

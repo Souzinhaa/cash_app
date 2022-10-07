@@ -1,134 +1,138 @@
 [
     {
-        "merged": "C:\\Users\\Bruno\\.gradle\\daemon\\7.3.3\\com.fho.piggycash.app-merged_res-34:\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\Bruno\\.gradle\\daemon\\7.3.3\\com.fho.piggycash.app-main-36:\\drawable\\ic_launcher_background.xml"
+        "merged": "C:\\Users\\Adrian\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-merged_res-34:\\drawable_ic_money.xml.flat",
+        "source": "C:\\Users\\Adrian\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-main-36:\\drawable\\ic_money.xml"
     },
     {
-        "merged": "C:\\Users\\Bruno\\.gradle\\daemon\\7.3.3\\com.fho.piggycash.app-merged_res-34:\\drawable_button_background.xml.flat",
-        "source": "C:\\Users\\Bruno\\.gradle\\daemon\\7.3.3\\com.fho.piggycash.app-main-36:\\drawable\\button_background.xml"
+        "merged": "C:\\Users\\Adrian\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-merged_res-34:\\drawable_add_money_background.xml.flat",
+        "source": "C:\\Users\\Adrian\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-main-36:\\drawable\\add_money_background.xml"
     },
     {
-        "merged": "C:\\Users\\Bruno\\.gradle\\daemon\\7.3.3\\com.fho.piggycash.app-merged_res-34:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\Bruno\\.gradle\\daemon\\7.3.3\\com.fho.piggycash.app-main-36:\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "C:\\Users\\Adrian\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-merged_res-34:\\drawable_button_background.xml.flat",
+        "source": "C:\\Users\\Adrian\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-main-36:\\drawable\\button_background.xml"
     },
     {
-        "merged": "C:\\Users\\Bruno\\.gradle\\daemon\\7.3.3\\com.fho.piggycash.app-merged_res-34:\\drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\Bruno\\.gradle\\daemon\\7.3.3\\com.fho.piggycash.app-main-36:\\drawable-v24\\ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\Adrian\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-merged_res-34:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Adrian\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-main-36:\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\Bruno\\.gradle\\daemon\\7.3.3\\com.fho.piggycash.app-merged_res-34:\\xml_data_extraction_rules.xml.flat",
-        "source": "C:\\Users\\Bruno\\.gradle\\daemon\\7.3.3\\com.fho.piggycash.app-main-36:\\xml\\data_extraction_rules.xml"
+        "merged": "C:\\Users\\Adrian\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-merged_res-34:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\Adrian\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-main-36:\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "C:\\Users\\Bruno\\.gradle\\daemon\\7.3.3\\com.fho.piggycash.app-merged_res-34:\\drawable_retire_money_background.xml.flat",
-        "source": "C:\\Users\\Bruno\\.gradle\\daemon\\7.3.3\\com.fho.piggycash.app-main-36:\\drawable\\retire_money_background.xml"
+        "merged": "C:\\Users\\Adrian\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-merged_res-34:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Adrian\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-main-36:\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\Bruno\\.gradle\\daemon\\7.3.3\\com.fho.piggycash.app-merged_res-34:\\layout_activity_login_screen.xml.flat",
-        "source": "C:\\Users\\Bruno\\.gradle\\daemon\\7.3.3\\com.fho.piggycash.app-main-36:\\layout\\activity_login_screen.xml"
+        "merged": "C:\\Users\\Adrian\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-merged_res-34:\\drawable_card_background.xml.flat",
+        "source": "C:\\Users\\Adrian\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-main-36:\\drawable\\card_background.xml"
     },
     {
-        "merged": "C:\\Users\\Bruno\\.gradle\\daemon\\7.3.3\\com.fho.piggycash.app-merged_res-34:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Bruno\\.gradle\\daemon\\7.3.3\\com.fho.piggycash.app-main-36:\\mipmap-xxxhdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\Adrian\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-merged_res-34:\\drawable_edit_background.xml.flat",
+        "source": "C:\\Users\\Adrian\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-main-36:\\drawable\\edit_background.xml"
     },
     {
-        "merged": "C:\\Users\\Bruno\\.gradle\\daemon\\7.3.3\\com.fho.piggycash.app-merged_res-34:\\drawable_ic_lock.xml.flat",
-        "source": "C:\\Users\\Bruno\\.gradle\\daemon\\7.3.3\\com.fho.piggycash.app-main-36:\\drawable\\ic_lock.xml"
+        "merged": "C:\\Users\\Adrian\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-merged_res-34:\\layout_activity_sign_in_screen.xml.flat",
+        "source": "C:\\Users\\Adrian\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-main-36:\\layout\\activity_sign_in_screen.xml"
     },
     {
-        "merged": "C:\\Users\\Bruno\\.gradle\\daemon\\7.3.3\\com.fho.piggycash.app-merged_res-34:\\mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Bruno\\.gradle\\daemon\\7.3.3\\com.fho.piggycash.app-main-36:\\mipmap-mdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\Adrian\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-merged_res-34:\\drawable_ic_email.xml.flat",
+        "source": "C:\\Users\\Adrian\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-main-36:\\drawable\\ic_email.xml"
     },
     {
-        "merged": "C:\\Users\\Bruno\\.gradle\\daemon\\7.3.3\\com.fho.piggycash.app-merged_res-34:\\font_inter.xml.flat",
-        "source": "C:\\Users\\Bruno\\.gradle\\daemon\\7.3.3\\com.fho.piggycash.app-main-36:\\font\\inter.xml"
+        "merged": "C:\\Users\\Adrian\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-merged_res-34:\\layout_fragment_transacoes.xml.flat",
+        "source": "C:\\Users\\Adrian\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-main-36:\\layout\\fragment_transacoes.xml"
     },
     {
-        "merged": "C:\\Users\\Bruno\\.gradle\\daemon\\7.3.3\\com.fho.piggycash.app-merged_res-34:\\drawable_ic_add_money.xml.flat",
-        "source": "C:\\Users\\Bruno\\.gradle\\daemon\\7.3.3\\com.fho.piggycash.app-main-36:\\drawable\\ic_add_money.xml"
+        "merged": "com.fho.piggycash.app-merged_res-34:/layout_activity_sign_in_screen.xml.flat",
+        "source": "com.fho.piggycash.app-main-36:/layout/activity_sign_in_screen.xml"
     },
     {
-        "merged": "C:\\Users\\Bruno\\.gradle\\daemon\\7.3.3\\com.fho.piggycash.app-merged_res-34:\\mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Bruno\\.gradle\\daemon\\7.3.3\\com.fho.piggycash.app-main-36:\\mipmap-xhdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\Adrian\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-merged_res-34:\\drawable_ic_add_money.xml.flat",
+        "source": "C:\\Users\\Adrian\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-main-36:\\drawable\\ic_add_money.xml"
     },
     {
-        "merged": "C:\\Users\\Bruno\\.gradle\\daemon\\7.3.3\\com.fho.piggycash.app-merged_res-34:\\drawable_ic_retire_money.xml.flat",
-        "source": "C:\\Users\\Bruno\\.gradle\\daemon\\7.3.3\\com.fho.piggycash.app-main-36:\\drawable\\ic_retire_money.xml"
+        "merged": "C:\\Users\\Adrian\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-merged_res-34:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Adrian\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-main-36:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\Bruno\\.gradle\\daemon\\7.3.3\\com.fho.piggycash.app-merged_res-34:\\mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Bruno\\.gradle\\daemon\\7.3.3\\com.fho.piggycash.app-main-36:\\mipmap-hdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\Adrian\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-merged_res-34:\\drawable_ic_arrow_forward.xml.flat",
+        "source": "C:\\Users\\Adrian\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-main-36:\\drawable\\ic_arrow_forward.xml"
     },
     {
-        "merged": "C:\\Users\\Bruno\\.gradle\\daemon\\7.3.3\\com.fho.piggycash.app-merged_res-34:\\layout_fragment_main.xml.flat",
-        "source": "C:\\Users\\Bruno\\.gradle\\daemon\\7.3.3\\com.fho.piggycash.app-main-36:\\layout\\fragment_main.xml"
+        "merged": "C:\\Users\\Adrian\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-merged_res-34:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Adrian\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-main-36:\\mipmap-hdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\Bruno\\.gradle\\daemon\\7.3.3\\com.fho.piggycash.app-merged_res-34:\\drawable_ic_money.xml.flat",
-        "source": "C:\\Users\\Bruno\\.gradle\\daemon\\7.3.3\\com.fho.piggycash.app-main-36:\\drawable\\ic_money.xml"
+        "merged": "C:\\Users\\Adrian\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-merged_res-34:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Adrian\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-main-36:\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.fho.piggycash.app-merged_res-34:/layout_activity_login_screen.xml.flat",
-        "source": "com.fho.piggycash.app-main-36:/layout/activity_login_screen.xml"
+        "merged": "C:\\Users\\Adrian\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-merged_res-34:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Adrian\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-main-36:\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\Bruno\\.gradle\\daemon\\7.3.3\\com.fho.piggycash.app-merged_res-34:\\drawable_add_money_background.xml.flat",
-        "source": "C:\\Users\\Bruno\\.gradle\\daemon\\7.3.3\\com.fho.piggycash.app-main-36:\\drawable\\add_money_background.xml"
+        "merged": "C:\\Users\\Adrian\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-merged_res-34:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Adrian\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-main-36:\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\Bruno\\.gradle\\daemon\\7.3.3\\com.fho.piggycash.app-merged_res-34:\\drawable_card_background.xml.flat",
-        "source": "C:\\Users\\Bruno\\.gradle\\daemon\\7.3.3\\com.fho.piggycash.app-main-36:\\drawable\\card_background.xml"
+        "merged": "C:\\Users\\Adrian\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-merged_res-34:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Adrian\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-main-36:\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\Bruno\\.gradle\\daemon\\7.3.3\\com.fho.piggycash.app-merged_res-34:\\xml_backup_rules.xml.flat",
-        "source": "C:\\Users\\Bruno\\.gradle\\daemon\\7.3.3\\com.fho.piggycash.app-main-36:\\xml\\backup_rules.xml"
+        "merged": "C:\\Users\\Adrian\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-merged_res-34:\\drawable_retire_money_background.xml.flat",
+        "source": "C:\\Users\\Adrian\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-main-36:\\drawable\\retire_money_background.xml"
     },
     {
-        "merged": "C:\\Users\\Bruno\\.gradle\\daemon\\7.3.3\\com.fho.piggycash.app-merged_res-34:\\mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Bruno\\.gradle\\daemon\\7.3.3\\com.fho.piggycash.app-main-36:\\mipmap-xxhdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\Adrian\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-merged_res-34:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\Adrian\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-main-36:\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\Bruno\\.gradle\\daemon\\7.3.3\\com.fho.piggycash.app-merged_res-34:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Bruno\\.gradle\\daemon\\7.3.3\\com.fho.piggycash.app-main-36:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\Adrian\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-merged_res-34:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\Adrian\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-main-36:\\layout\\activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\Bruno\\.gradle\\daemon\\7.3.3\\com.fho.piggycash.app-merged_res-34:\\mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Bruno\\.gradle\\daemon\\7.3.3\\com.fho.piggycash.app-main-36:\\mipmap-hdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\Adrian\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-merged_res-34:\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\Adrian\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-main-36:\\drawable-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\Bruno\\.gradle\\daemon\\7.3.3\\com.fho.piggycash.app-merged_res-34:\\drawable_edit_background.xml.flat",
-        "source": "C:\\Users\\Bruno\\.gradle\\daemon\\7.3.3\\com.fho.piggycash.app-main-36:\\drawable\\edit_background.xml"
+        "merged": "C:\\Users\\Adrian\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-merged_res-34:\\font_inter.xml.flat",
+        "source": "C:\\Users\\Adrian\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-main-36:\\font\\inter.xml"
     },
     {
-        "merged": "C:\\Users\\Bruno\\.gradle\\daemon\\7.3.3\\com.fho.piggycash.app-merged_res-34:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\Bruno\\.gradle\\daemon\\7.3.3\\com.fho.piggycash.app-main-36:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "C:\\Users\\Adrian\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-merged_res-34:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Adrian\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-main-36:\\mipmap-xhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\Bruno\\.gradle\\daemon\\7.3.3\\com.fho.piggycash.app-merged_res-34:\\drawable_ic_arrow_forward.xml.flat",
-        "source": "C:\\Users\\Bruno\\.gradle\\daemon\\7.3.3\\com.fho.piggycash.app-main-36:\\drawable\\ic_arrow_forward.xml"
+        "merged": "C:\\Users\\Adrian\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-merged_res-34:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\Adrian\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-main-36:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\Bruno\\.gradle\\daemon\\7.3.3\\com.fho.piggycash.app-merged_res-34:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Bruno\\.gradle\\daemon\\7.3.3\\com.fho.piggycash.app-main-36:\\mipmap-xhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\Adrian\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-merged_res-34:\\drawable_ic_retire_money.xml.flat",
+        "source": "C:\\Users\\Adrian\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-main-36:\\drawable\\ic_retire_money.xml"
     },
     {
-        "merged": "C:\\Users\\Bruno\\.gradle\\daemon\\7.3.3\\com.fho.piggycash.app-merged_res-34:\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\Bruno\\.gradle\\daemon\\7.3.3\\com.fho.piggycash.app-main-36:\\layout\\activity_main.xml"
+        "merged": "C:\\Users\\Adrian\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-merged_res-34:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Adrian\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-main-36:\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\Bruno\\.gradle\\daemon\\7.3.3\\com.fho.piggycash.app-merged_res-34:\\mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Bruno\\.gradle\\daemon\\7.3.3\\com.fho.piggycash.app-main-36:\\mipmap-mdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\Adrian\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-merged_res-34:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\Adrian\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-main-36:\\xml\\data_extraction_rules.xml"
     },
     {
-        "merged": "C:\\Users\\Bruno\\.gradle\\daemon\\7.3.3\\com.fho.piggycash.app-merged_res-34:\\layout_fragment_transacoes.xml.flat",
-        "source": "C:\\Users\\Bruno\\.gradle\\daemon\\7.3.3\\com.fho.piggycash.app-main-36:\\layout\\fragment_transacoes.xml"
+        "merged": "C:\\Users\\Adrian\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-merged_res-34:\\layout_activity_login_screen.xml.flat",
+        "source": "C:\\Users\\Adrian\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-main-36:\\layout\\activity_login_screen.xml"
     },
     {
-        "merged": "C:\\Users\\Bruno\\.gradle\\daemon\\7.3.3\\com.fho.piggycash.app-merged_res-34:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Bruno\\.gradle\\daemon\\7.3.3\\com.fho.piggycash.app-main-36:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\Adrian\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-merged_res-34:\\drawable_ic_lock.xml.flat",
+        "source": "C:\\Users\\Adrian\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-main-36:\\drawable\\ic_lock.xml"
     },
     {
-        "merged": "C:\\Users\\Bruno\\.gradle\\daemon\\7.3.3\\com.fho.piggycash.app-merged_res-34:\\drawable_ic_email.xml.flat",
-        "source": "C:\\Users\\Bruno\\.gradle\\daemon\\7.3.3\\com.fho.piggycash.app-main-36:\\drawable\\ic_email.xml"
+        "merged": "C:\\Users\\Adrian\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-merged_res-34:\\layout_fragment_main.xml.flat",
+        "source": "C:\\Users\\Adrian\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-main-36:\\layout\\fragment_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Adrian\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-merged_res-34:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\Adrian\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-main-36:\\xml\\backup_rules.xml"
     }
 ]
