@@ -25,10 +25,8 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"/>
         <TextView
-            android:id="@+id/text_balanco"
-            android:text="@string/saldo"
+            android:id="@+id/text_nome"
             android:textSize="@dimen/vintesp"
-            android:drawableRight="@drawable/ic_arrow_forward"
             android:textColor="@color/white"
             android:layout_marginTop="@dimen/vintesp"
             android:layout_marginLeft="@dimen/vintesp"
@@ -49,57 +47,39 @@
             app:layout_constraintLeft_toLeftOf="parent"/>
         <ImageView
             android:id="@+id/img_money"
-            android:src="@drawable/ic_money"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/vintesp"
-            android:layout_marginRight="@dimen/vintesp"
+            android:src="@drawable/ic_money_op"
+            android:layout_width="300sp"
+            android:layout_height="300sp"
+            android:layout_marginRight="-75sp"
+            android:layout_marginBottom="-50sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintRight_toRightOf="parent"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <ImageView
-        android:id="@+id/img_add_money"
-        android:src="@drawable/add_money_background"
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_add"
+        android:background="@drawable/add_money_background"
+        android:textSize="@dimen/vintesp"
+        android:drawableRight="@drawable/ic_add_money"
+        android:text="@string/adicionar_dinheiro"
         android:layout_width="150sp"
         android:layout_height="80sp"
         android:layout_marginTop="@dimen/vintesp"
         app:layout_constraintTop_toBottomOf="@id/constraint_card"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@id/img_retire_money"/>
+        app:layout_constraintRight_toLeftOf="@id/bt_remove"/>
 
-    <TextView
-        android:id="@+id/text_add_money"
-        android:textSize="@dimen/vintesp"
-        android:drawableRight="@drawable/ic_add_money"
-        android:text="@string/adicionar_dinheiro"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="@id/img_add_money"
-        app:layout_constraintBottom_toBottomOf="@id/img_add_money"
-        app:layout_constraintLeft_toLeftOf="@id/img_add_money"
-        app:layout_constraintRight_toRightOf="@id/img_add_money"/>
-
-    <ImageView
-        android:id="@+id/img_retire_money"
-        android:src="@drawable/retire_money_background"
-        android:layout_width="150sp"
-        android:layout_height="80sp"
-        app:layout_constraintTop_toTopOf="@id/img_add_money"
-        app:layout_constraintLeft_toRightOf="@id/img_add_money"
-        app:layout_constraintRight_toRightOf="parent"/>
-
-    <TextView
-        android:id="@+id/text_retire_money"
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_remove"
+        android:background="@drawable/retire_money_background"
         android:textSize="@dimen/vintesp"
         android:drawableRight="@drawable/ic_retire_money"
         android:text="@string/retirar_dinheiro"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="@id/img_retire_money"
-        app:layout_constraintBottom_toBottomOf="@id/img_retire_money"
-        app:layout_constraintLeft_toLeftOf="@id/img_retire_money"
-        app:layout_constraintRight_toRightOf="@id/img_retire_money"/>
+        android:layout_width="150sp"
+        android:layout_height="80sp"
+        app:layout_constraintTop_toTopOf="@id/bt_add"
+        app:layout_constraintLeft_toRightOf="@id/bt_add"
+        app:layout_constraintRight_toRightOf="parent"/>
 
     <TextView
         android:id="@+id/text_transacoes"
@@ -109,7 +89,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/trintasp"
         android:layout_marginTop="@dimen/vintesp"
-        app:layout_constraintTop_toBottomOf="@id/img_add_money"
+        app:layout_constraintTop_toBottomOf="@id/bt_add"
         app:layout_constraintLeft_toLeftOf="parent"/>
 
     <TextView
@@ -175,8 +155,5 @@
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

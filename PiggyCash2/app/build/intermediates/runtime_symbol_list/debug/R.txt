@@ -2531,6 +2531,7 @@ int drawable ic_m3_chip_check 0x7f080086
 int drawable ic_m3_chip_checked_circle 0x7f080087
 int drawable ic_m3_chip_close 0x7f080088
 int drawable ic_money 0x7f080089
+int drawable ic_money_op 0x7f0800bd
 int drawable ic_mtrl_checked_circle 0x7f08008a
 int drawable ic_mtrl_chip_checked_black 0x7f08008b
 int drawable ic_mtrl_chip_checked_circle 0x7f08008c
@@ -2688,8 +2689,10 @@ int id browser_actions_menu_item_icon 0x7f0a0065
 int id browser_actions_menu_item_text 0x7f0a0066
 int id browser_actions_menu_items 0x7f0a0067
 int id browser_actions_menu_view 0x7f0a0068
+int id bt_add 0x7f0a020b
 int id bt_cadastrar 0x7f0a0208
 int id bt_login 0x7f0a0069
+int id bt_remove 0x7f0a020c
 int id buttonPanel 0x7f0a006a
 int id cache_measures 0x7f0a006b
 int id callMeasure 0x7f0a006c
@@ -2775,6 +2778,7 @@ int id edit_email 0x7f0a00bb
 int id edit_nome 0x7f0a0209
 int id edit_query 0x7f0a00bc
 int id edit_senha 0x7f0a00bd
+int id edit_valor 0x7f0a020d
 int id edittext_dropdown_editable 0x7f0a00be
 int id edittext_dropdown_noneditable 0x7f0a00bf
 int id elastic 0x7f0a00c0
@@ -3045,11 +3049,14 @@ int id textStart 0x7f0a01c8
 int id textTop 0x7f0a01c9
 int id text_add_money 0x7f0a01ca
 int id text_balanco 0x7f0a01cb
+int id text_bottom 0x7f0a0210
 int id text_cadastro 0x7f0a01cc
 int id text_data_hora_transacao_1 0x7f0a01cd
 int id text_input_end_icon 0x7f0a01ce
 int id text_input_error_icon 0x7f0a01cf
 int id text_input_start_icon 0x7f0a01d0
+int id text_nome 0x7f0a020a
+int id text_nome_transacao 0x7f0a020e
 int id text_nome_transacao_1 0x7f0a01d1
 int id text_retire_money 0x7f0a01d2
 int id text_subtitulo 0x7f0a01d3
@@ -3058,6 +3065,7 @@ int id text_titulo2 0x7f0a01d5
 int id text_transacoes 0x7f0a01d6
 int id text_transacoes_all 0x7f0a01d7
 int id text_valor 0x7f0a01d8
+int id text_valor_transacao 0x7f0a020f
 int id text_valor_transacao_1 0x7f0a01d9
 int id textinput_counter 0x7f0a01da
 int id textinput_error 0x7f0a01db
@@ -3333,6 +3341,7 @@ int string app_name 0x7f11001d
 int string appbar_scrolling_view_behavior 0x7f11001e
 int string bottom_sheet_behavior 0x7f11001f
 int string bottomsheet_action_expand_halfway 0x7f110020
+int string cadastrar_transacao 0x7f1100ac
 int string cadastro 0x7f110021
 int string cash 0x7f110022
 int string character_counter_content_description 0x7f110023
@@ -3375,6 +3384,8 @@ int string google_app_id 0x7f110047
 int string google_crash_reporting_api_key 0x7f110048
 int string google_storage_bucket 0x7f110049
 int string hide_bottom_view_on_scroll_behavior 0x7f11004a
+int string hint_nome_transacao 0x7f1100aa
+int string hint_valor 0x7f1100ab
 int string icon_content_description 0x7f11004b
 int string item_view_role_description 0x7f11004c
 int string label 0x7f11004d
@@ -3452,6 +3463,7 @@ int string mtrl_picker_toggle_to_year_selection 0x7f110094
 int string mtrl_timepicker_confirm 0x7f110095
 int string nome 0x7f1100a9
 int string nome1 0x7f110096
+int string nome_transacao 0x7f1100ad
 int string password_toggle_content_description 0x7f110097
 int string path_password_eye 0x7f110098
 int string path_password_eye_mask_strike_through 0x7f110099
@@ -3468,6 +3480,7 @@ int string senha 0x7f1100a3
 int string status_bar_notification_info_overflow 0x7f1100a4
 int string subtitulo 0x7f1100a5
 int string transacoes_recentes 0x7f1100a6
+int string valor_transacao 0x7f1100ae
 int string ver_todos 0x7f1100a7
 int style AlertDialog_AppCompat 0x7f120000
 int style AlertDialog_AppCompat_Light 0x7f120001

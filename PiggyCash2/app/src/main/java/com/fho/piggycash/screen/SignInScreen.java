@@ -107,6 +107,7 @@ public class SignInScreen extends AppCompatActivity {
 
         Map<String,Object> usuarios = new HashMap<>();
         usuarios.put("nome", nome);
+        usuarios.put("saldo", 0);
 
          String usuarioId = FirebaseAuth.getInstance().getCurrentUser().getUid();
 

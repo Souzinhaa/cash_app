@@ -38,6 +38,7 @@
     <string name="Cadastrar">Cadastrar</string>
     <string name="adicionar_dinheiro">Adicionar</string>
     <string name="app_name">PiggyCash</string>
+    <string name="cadastrar_transacao">Cadastrar Nova Transação</string>
     <string name="cadastro">Cadastre-se</string>
     <string name="cash">Cash</string>
     <string name="data_hora1">12:31 AM / Ago 30</string>
@@ -48,9 +49,12 @@
     <string name="google_app_id" translatable="false">1:194571898406:android:2724e5e26253038b8620e7</string>
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAVDk2LqSUJRfGV3i8HWKt8_oLUwvu7Na4</string>
     <string name="google_storage_bucket" translatable="false">piggy-cash-c9be0.appspot.com</string>
+    <string name="hint_nome_transacao">Lanche na Padaria do seu Zé</string>
+    <string name="hint_valor">R$1000,00</string>
     <string name="login">Login</string>
     <string name="nome">Nome</string>
     <string name="nome1">Lanche Faria Lima</string>
+    <string name="nome_transacao">Nome Transação</string>
     <string name="piggy">Piggy</string>
     <string name="preco1">- R$24,00</string>
     <string name="project_id" translatable="false">piggy-cash-c9be0</string>
@@ -60,6 +64,7 @@
     <string name="senha">Senha</string>
     <string name="subtitulo">Controle financeiro na palma da mão</string>
     <string name="transacoes_recentes">Transações Recentes</string>
+    <string name="valor_transacao">Valor Transação</string>
     <string name="ver_todos">Ver Todos</string>
     <style name="BaseTextLogin">
         <item name="android:layout_width">wrap_content</item>

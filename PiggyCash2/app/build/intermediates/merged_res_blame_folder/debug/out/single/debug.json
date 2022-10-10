@@ -16,6 +16,10 @@
         "source": "C:\\Users\\Adrian\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-main-36:\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
+        "merged": "com.fho.piggycash.app-merged_res-34:/layout_fragment_transacoes.xml.flat",
+        "source": "com.fho.piggycash.app-main-36:/layout/fragment_transacoes.xml"
+    },
+    {
         "merged": "C:\\Users\\Adrian\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-merged_res-34:\\drawable_ic_launcher_background.xml.flat",
         "source": "C:\\Users\\Adrian\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-main-36:\\drawable\\ic_launcher_background.xml"
     },
@@ -36,16 +40,16 @@
         "source": "C:\\Users\\Adrian\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-main-36:\\layout\\activity_sign_in_screen.xml"
     },
     {
-        "merged": "C:\\Users\\Adrian\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-merged_res-34:\\drawable_ic_email.xml.flat",
-        "source": "C:\\Users\\Adrian\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-main-36:\\drawable\\ic_email.xml"
-    },
-    {
         "merged": "C:\\Users\\Adrian\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-merged_res-34:\\layout_fragment_transacoes.xml.flat",
         "source": "C:\\Users\\Adrian\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-main-36:\\layout\\fragment_transacoes.xml"
     },
     {
-        "merged": "com.fho.piggycash.app-merged_res-34:/layout_activity_sign_in_screen.xml.flat",
-        "source": "com.fho.piggycash.app-main-36:/layout/activity_sign_in_screen.xml"
+        "merged": "C:\\Users\\Adrian\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-merged_res-34:\\drawable_ic_email.xml.flat",
+        "source": "C:\\Users\\Adrian\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-main-36:\\drawable\\ic_email.xml"
+    },
+    {
+        "merged": "C:\\Users\\Adrian\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-merged_res-34:\\drawable_ic_money_op.xml.flat",
+        "source": "C:\\Users\\Adrian\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-main-36:\\drawable\\ic_money_op.xml"
     },
     {
         "merged": "C:\\Users\\Adrian\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-merged_res-34:\\drawable_ic_add_money.xml.flat",

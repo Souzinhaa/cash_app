@@ -15,7 +15,12 @@
     <string name="senha">Senha</string>
     <string name="nome">Nome</string>
     <string name="login">Login</string>
+    <string name="cadastrar_transacao">Cadastrar Nova Transação</string>
+    <string name="nome_transacao">Nome Transação</string>
+    <string name="valor_transacao">Valor Transação</string>
     <string name="Cadastrar">Cadastrar</string>
+    <string name="hint_valor">R$1000,00</string>
+    <string name="hint_nome_transacao">Lanche na Padaria do seu Zé</string>
     <string name="cadastro">Cadastre-se</string>
     <string name="subtitulo">Controle financeiro na palma da mão</string>
 </resources>

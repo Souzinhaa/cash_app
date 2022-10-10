@@ -2532,6 +2532,7 @@ drawable ic_m3_chip_check
 drawable ic_m3_chip_checked_circle
 drawable ic_m3_chip_close
 drawable ic_money
+drawable ic_money_op
 drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
@@ -2689,8 +2690,10 @@ id browser_actions_menu_item_icon
 id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
+id bt_add
 id bt_cadastrar
 id bt_login
+id bt_remove
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -2776,6 +2779,7 @@ id edit_email
 id edit_nome
 id edit_query
 id edit_senha
+id edit_valor
 id edittext_dropdown_editable
 id edittext_dropdown_noneditable
 id elastic
@@ -3046,11 +3050,14 @@ id textStart
 id textTop
 id text_add_money
 id text_balanco
+id text_bottom
 id text_cadastro
 id text_data_hora_transacao_1
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
+id text_nome
+id text_nome_transacao
 id text_nome_transacao_1
 id text_retire_money
 id text_subtitulo
@@ -3059,6 +3066,7 @@ id text_titulo2
 id text_transacoes
 id text_transacoes_all
 id text_valor
+id text_valor_transacao
 id text_valor_transacao_1
 id textinput_counter
 id textinput_error
@@ -3334,6 +3342,7 @@ string app_name
 string appbar_scrolling_view_behavior
 string bottom_sheet_behavior
 string bottomsheet_action_expand_halfway
+string cadastrar_transacao
 string cadastro
 string cash
 string character_counter_content_description
@@ -3376,6 +3385,8 @@ string google_app_id
 string google_crash_reporting_api_key
 string google_storage_bucket
 string hide_bottom_view_on_scroll_behavior
+string hint_nome_transacao
+string hint_valor
 string icon_content_description
 string item_view_role_description
 string label
@@ -3453,6 +3464,7 @@ string mtrl_picker_toggle_to_year_selection
 string mtrl_timepicker_confirm
 string nome
 string nome1
+string nome_transacao
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through
@@ -3469,6 +3481,7 @@ string senha
 string status_bar_notification_info_overflow
 string subtitulo
 string transacoes_recentes
+string valor_transacao
 string ver_todos
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
