@@ -1809,6 +1809,7 @@ color test_mtrl_calendar_day_selected
 color tooltip_background_dark
 color tooltip_background_light
 color white
+color white_50
 dimen abc_action_bar_content_inset_material
 dimen abc_action_bar_content_inset_with_nav
 dimen abc_action_bar_default_height_material
@@ -2584,6 +2585,7 @@ drawable test_custom_background
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable transaction_background
 font inter
 id ALT
 id BOTTOM_END
@@ -3757,6 +3759,9 @@ style ButtonLogin
 style CardView
 style CardView_Dark
 style CardView_Light
+style CustomBottomSheet
+style CustomBottomSheetDialog
+style CustomShapeAppearanceBottomSheetDialog
 style EditTextLogin
 style EmptyTheme
 style MaterialAlertDialog_Material3

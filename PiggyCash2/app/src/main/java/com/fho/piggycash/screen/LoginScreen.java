@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -13,6 +14,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.fho.piggycash.R;
+import com.fho.piggycash.util.KeyboardUtil;
 import com.fho.piggycash.util.ToastUtil;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -55,6 +57,15 @@ public class LoginScreen extends AppCompatActivity {
             @Override
             public void onClick(View v){
                 telaCadastro();
+            }
+        });
+
+        edit_senha.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+            @Override
+            public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+                KeyboardUtil.hideKeyboardActivity(LoginScreen.this);
+                edit_senha.clearFocus();
+                return true;
             }
         });
     }

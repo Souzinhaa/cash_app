@@ -15,6 +15,7 @@
         </item>
     </string-array>
     <array name="preloaded_fonts" translatable="false">
+        <item>@font/</item>
         <item>@font/inter</item>
     </array>
     <color name="black">#FF000000</color>
@@ -25,14 +26,15 @@
     <color name="card_retire">#FA8072</color>
     <color name="card_start">#010914</color>
     <color name="edit_color">#f5f5f5</color>
-    <color name="green1">#00FF0B</color>
+    <color name="green1">#14A44D</color>
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
-    <color name="red1">#FF0000</color>
+    <color name="red1">#DC4C64</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="white_50">#7FFFFFFF</color>
     <dimen name="trintasp">30sp</dimen>
     <dimen name="vintesp">20sp</dimen>
     <string name="Cadastrar">Cadastrar</string>
@@ -75,19 +77,32 @@
         <item name="android:layout_marginRight">5sp</item>
     </style>
     <style name="ButtonLogin">
+        <item name="android:textSize">16sp</item>
         <item name="android:fontFamily">@font/inter</item>
         <item name="android:layout_width">240sp</item>
         <item name="android:layout_height">45sp</item>
         <item name="android:layout_marginTop">50sp</item>
-        <item name="android:textSize">@dimen/vintesp</item>
+    </style>
+    <style name="CustomBottomSheet" parent="Widget.MaterialComponents.BottomSheet">
+        <item name="shapeAppearanceOverlay">@style/CustomShapeAppearanceBottomSheetDialog</item>
+    </style>
+    <style name="CustomBottomSheetDialog" parent="@style/ThemeOverlay.MaterialComponents.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/CustomBottomSheet</item>
+    </style>
+    <style name="CustomShapeAppearanceBottomSheetDialog" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">20sp</item>
+        <item name="cornerSizeTopLeft">20sp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
     </style>
     <style name="EditTextLogin">
         <item name="android:background">@drawable/edit_background</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:textSize">@dimen/vintesp</item>
+        <item name="android:textSize">16sp</item>
         <item name="android:fontFamily">@font/inter</item>
-        <item name="android:padding">10sp</item>
+        <item name="android:padding">16sp</item>
         <item name="android:layout_marginTop">@dimen/trintasp</item>
         <item name="android:layout_marginLeft">40sp</item>
         <item name="android:layout_marginRight">40sp</item>
@@ -107,11 +122,12 @@
         <item name="colorPrimaryVariant">@color/black</item>
         <item name="colorOnPrimary">@color/black</item>
         
-        <item name="colorSecondary">@color/white</item>
+        <item name="colorSecondary">@color/black</item>
         <item name="colorSecondaryVariant">@color/black</item>
         <item name="colorOnSecondary">@color/black</item>
         
-        <item name="android:statusBarColor" ns1:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor" ns1:targetApi="l">?attr/colorPrimary</item>
         
+        <item name="bottomSheetDialogTheme">@style/CustomBottomSheetDialog</item>
     </style>
 </resources>

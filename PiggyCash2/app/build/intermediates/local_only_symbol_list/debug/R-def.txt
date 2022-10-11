@@ -20,6 +20,7 @@ color red1
 color teal_200
 color teal_700
 color white
+color white_50
 dimen trintasp
 dimen vintesp
 drawable add_money_background
@@ -36,6 +37,7 @@ drawable ic_money
 drawable ic_money_op
 drawable ic_retire_money
 drawable retire_money_background
+drawable transaction_background
 font inter
 id bt_add
 id bt_cadastrar
@@ -110,6 +112,9 @@ string valor_transacao
 string ver_todos
 style BaseTextLogin
 style ButtonLogin
+style CustomBottomSheet
+style CustomBottomSheetDialog
+style CustomShapeAppearanceBottomSheetDialog
 style EditTextLogin
 style TextLogin
 style TextTittleLogin

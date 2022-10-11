@@ -6,12 +6,17 @@ import androidx.appcompat.widget.AppCompatButton;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.fho.piggycash.R;
+import com.fho.piggycash.model.TransactionModel;
+import com.fho.piggycash.service.SignUp;
+import com.fho.piggycash.util.MaskEditUtil;
 import com.fho.piggycash.util.ToastUtil;
+import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
@@ -21,10 +26,11 @@ import com.google.firebase.firestore.FirebaseFirestoreException;
 
 public class MainActivity extends AppCompatActivity {
 
-    String usuarioId, nome, email;
-    FirebaseFirestore db = FirebaseFirestore.getInstance();
-    TextView text_nome, text_valor;
-    AppCompatButton bt_add, bt_remove;
+    private String usuarioId, nome, email;
+    private FirebaseFirestore db = FirebaseFirestore.getInstance();
+    private TextView text_nome, text_valor;
+    private AppCompatButton bt_add, bt_remove;
+    private SignUp signUp = SignUp.getInstance();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,16 +43,14 @@ public class MainActivity extends AppCompatActivity {
         bt_add.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                BottomSheetMoney bottomSheetMoney = new BottomSheetMoney();
-                bottomSheetMoney.show(getSupportFragmentManager(), "tag");
+                showBottomSheetDialog(true);
             }
         });
 
         bt_remove.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                BottomSheetMoney bottomSheetMoney = new BottomSheetMoney();
-                bottomSheetMoney.show(getSupportFragmentManager(), "tag");
+                showBottomSheetDialog(false);
             }
         });
     }
@@ -82,5 +86,30 @@ public class MainActivity extends AppCompatActivity {
     public void iniciarComponentes2(){
         bt_add = findViewById(R.id.bt_add);
         bt_remove = findViewById(R.id.bt_remove);
+    }
+
+    private void showBottomSheetDialog(boolean function){
+        BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(this);
+        bottomSheetDialog.setContentView(R.layout.fragment_transacoes);
+
+        EditText edit_nome = bottomSheetDialog.findViewById(R.id.edit_valor);
+        EditText edit_valor = bottomSheetDialog.findViewById(R.id.edit_valor);
+        edit_valor.addTextChangedListener(MaskEditUtil.maskValue(edit_valor, MaskEditUtil.FORMAT_VALUE));
+
+        Button bt_cadastrar = bottomSheetDialog.findViewById(R.id.bt_cadastrar);
+
+        bt_cadastrar.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                if(function)
+                    signUp.salvarTransacao(v, new TransactionModel(String.valueOf(edit_nome.getText()), Double.parseDouble(MaskEditUtil.unmask(String.valueOf(edit_valor.getText())))), true);
+                else
+                    signUp.salvarTransacao(v, new TransactionModel(String.valueOf(edit_nome.getText()), Double.parseDouble(MaskEditUtil.unmask(String.valueOf(edit_valor.getText())))), true);
+            }
+
+
+        });
+
+        bottomSheetDialog.show();
     }
 }

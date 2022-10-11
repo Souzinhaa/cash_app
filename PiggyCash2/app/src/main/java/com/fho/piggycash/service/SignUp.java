@@ -5,6 +5,7 @@ import android.view.View;
 
 import androidx.annotation.NonNull;
 
+import com.fho.piggycash.model.TransactionModel;
 import com.fho.piggycash.model.UserData;
 import com.fho.piggycash.util.ToastUtil;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -85,7 +86,34 @@ public class SignUp {
                 Log.d("db","Erro ao salvar os dados: " + e.toString());
             }
         });
+    }
 
+    public void salvarTransacao(View v, TransactionModel transaction, boolean type){
+
+        FirebaseFirestore db = FirebaseFirestore.getInstance();
+
+        String usuarioId = FirebaseAuth.getInstance().getCurrentUser().getUid();
+
+        DocumentReference documentReference;
+
+        if(type)
+            documentReference = db.collection("transacao-adicionar").document(usuarioId);
+        else
+            documentReference = db.collection("transacao-retirar").document(usuarioId);
+
+        documentReference.set(transaction).addOnSuccessListener(new OnSuccessListener<Void>() {
+            @Override
+            public void onSuccess(Void unused) {
+                ToastUtil.showToast(v, "Transação cadastrada com sucesso!");
+                Log.d("db","Sucesso ao salvar os dados");
+            }
+        }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
+                ToastUtil.showToast(v, "Erro ao cadastrar transação!");
+                Log.d("db","Erro ao salvar os dados: " + e.toString());
+            }
+        });
     }
 
     private SignUp() {}
