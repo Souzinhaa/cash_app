@@ -26,7 +26,12 @@
     <color name="card_retire">#FA8072</color>
     <color name="card_start">#010914</color>
     <color name="edit_color">#f5f5f5</color>
+    <color name="gray">#FF555555</color>
+    <color name="gray_7">#FF777777</color>
     <color name="green1">#14A44D</color>
+    <color name="ic_launcher_background">#3DDC84</color>
+    <color name="ic_launcher_s_background">#FFFFFF</color>
+    <color name="light_blue">#e5e8f1</color>
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
@@ -39,12 +44,14 @@
     <dimen name="vintesp">20sp</dimen>
     <string name="Cadastrar">Cadastrar</string>
     <string name="adicionar_dinheiro">Adicionar</string>
-    <string name="app_name">PiggyCash</string>
+    <string name="alternar">Alternar</string>
+    <string name="app_name">CashApp</string>
     <string name="cadastrar_transacao">Cadastrar Nova Transação</string>
     <string name="cadastro">Cadastre-se</string>
-    <string name="cash">Cash</string>
+    <string name="cash">App</string>
     <string name="data_hora1">12:31 AM / Ago 30</string>
     <string name="default_web_client_id" translatable="false">194571898406-13arh9kkgg92egp0skstlq88jlqucjnk.apps.googleusercontent.com</string>
+    <string name="deposito_recebido">Depósito Recebido</string>
     <string name="email">E-mail</string>
     <string name="gcm_defaultSenderId" translatable="false">194571898406</string>
     <string name="google_api_key" translatable="false">AIzaSyAVDk2LqSUJRfGV3i8HWKt8_oLUwvu7Na4</string>
@@ -52,14 +59,19 @@
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAVDk2LqSUJRfGV3i8HWKt8_oLUwvu7Na4</string>
     <string name="google_storage_bucket" translatable="false">piggy-cash-c9be0.appspot.com</string>
     <string name="hint_nome_transacao">Lanche na Padaria do seu Zé</string>
-    <string name="hint_valor">R$1000,00</string>
+    <string name="hint_valor">R$1.000,00</string>
+    <string name="inicio">Início</string>
     <string name="login">Login</string>
     <string name="nome">Nome</string>
     <string name="nome1">Lanche Faria Lima</string>
     <string name="nome_transacao">Nome Transação</string>
-    <string name="piggy">Piggy</string>
+    <string name="novo_deposito">Novo Depósito</string>
+    <string name="novo_saque">Novo Saque</string>
+    <string name="perfil">Perfil</string>
+    <string name="piggy">Cash</string>
     <string name="preco1">- R$24,00</string>
     <string name="project_id" translatable="false">piggy-cash-c9be0</string>
+    <string name="retirada_confirmada">Retirada Confirmada</string>
     <string name="retirar_dinheiro">Retirar</string>
     <string name="saldo">Saldo Restante</string>
     <string name="saldo_exemplo">R$ 98200</string>
@@ -67,7 +79,6 @@
     <string name="subtitulo">Controle financeiro na palma da mão</string>
     <string name="transacoes_recentes">Transações Recentes</string>
     <string name="valor_transacao">Valor Transação</string>
-    <string name="ver_todos">Ver Todos</string>
     <style name="BaseTextLogin">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
@@ -78,10 +89,23 @@
     </style>
     <style name="ButtonLogin">
         <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/black</item>
         <item name="android:fontFamily">@font/inter</item>
         <item name="android:layout_width">240sp</item>
         <item name="android:layout_height">45sp</item>
         <item name="android:layout_marginTop">50sp</item>
+    </style>
+    <style name="ButtonMain">
+        <item name="android:background">@drawable/item_transaction_background</item>
+        <item name="android:paddingTop">10sp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/inter</item>
+        <item name="android:lines">2</item>
+        <item name="android:layout_marginLeft">@dimen/trintasp</item>
+        <item name="android:layout_width">85sp</item>
+        <item name="android:layout_height">115sp</item>
+        <item name="android:layout_marginTop">@dimen/vintesp</item>
     </style>
     <style name="CustomBottomSheet" parent="Widget.MaterialComponents.BottomSheet">
         <item name="shapeAppearanceOverlay">@style/CustomShapeAppearanceBottomSheetDialog</item>
@@ -103,6 +127,8 @@
         <item name="android:textSize">16sp</item>
         <item name="android:fontFamily">@font/inter</item>
         <item name="android:padding">16sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/gray</item>
         <item name="android:layout_marginTop">@dimen/trintasp</item>
         <item name="android:layout_marginLeft">40sp</item>
         <item name="android:layout_marginRight">40sp</item>
@@ -116,18 +142,25 @@
         <item name="android:textSize">40sp</item>
         <item name="android:fontFamily">@font/inter</item>
     </style>
-    <style name="Theme.PiggyCash" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.PiggyCash" parent="Theme.MaterialComponents.DayNight">
         
-        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimary">@color/gray</item>
         <item name="colorPrimaryVariant">@color/black</item>
         <item name="colorOnPrimary">@color/black</item>
         
         <item name="colorSecondary">@color/black</item>
-        <item name="colorSecondaryVariant">@color/black</item>
+        <item name="colorSecondaryVariant">@color/gray</item>
         <item name="colorOnSecondary">@color/black</item>
         
-        <item name="android:statusBarColor" ns1:targetApi="l">?attr/colorPrimary</item>
+        <item name="android:statusBarColor" ns1:targetApi="l">@color/light_blue</item>
+        <item name="android:windowLightStatusBar">true</item>
         
         <item name="bottomSheetDialogTheme">@style/CustomBottomSheetDialog</item>
+    </style>
+    <style name="TransacoesText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">16sp</item>
     </style>
 </resources>

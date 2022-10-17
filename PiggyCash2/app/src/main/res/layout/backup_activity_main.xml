@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_blue"
+    tools:context=".screen.MainActivity">
+
+    <ImageView
+        android:id="@+id/img_exit"
+        android:src="@drawable/ic_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:layout_marginRight="@dimen/trintasp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/text_nome_app"
+        android:textSize="12sp"
+        android:textColor="@color/black"
+        android:text="@string/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/trintasp"
+        app:layout_constraintTop_toTopOf="@id/img_exit"
+        app:layout_constraintBottom_toBottomOf="@id/img_exit"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint_card"
+        android:layout_width="match_parent"
+        android:layout_height="200sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginLeft="@dimen/vintesp"
+        android:layout_marginRight="@dimen/vintesp"
+        app:layout_constraintTop_toBottomOf="@id/img_exit"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+        <ImageView
+            android:id="@+id/img_card"
+            android:src="@drawable/card_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+        <TextView
+            android:id="@+id/text_nome"
+            android:textSize="@dimen/vintesp"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/vintesp"
+            android:layout_marginLeft="@dimen/vintesp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+        <TextView
+            android:id="@+id/text_valor"
+            android:textSize="@dimen/vintesp"
+            android:textColor="@color/white"
+            android:layout_marginBottom="@dimen/vintesp"
+            android:layout_marginLeft="@dimen/vintesp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+        <ImageView
+            android:id="@+id/img_money"
+            android:src="@drawable/ic_money_op"
+            android:layout_width="300sp"
+            android:layout_height="300sp"
+            android:layout_marginRight="-75sp"
+            android:layout_marginBottom="-50sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_add"
+        style="@style/ButtonMain"
+        android:text="@string/novo_deposito"
+        android:drawableTop="@drawable/icon_depositar"
+        app:layout_constraintTop_toBottomOf="@id/constraint_card"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_remove"
+        style="@style/ButtonMain"
+        android:text="@string/novo_saque"
+        android:drawableTop="@drawable/icon_retirar_cash"
+        app:layout_constraintTop_toBottomOf="@id/constraint_card"
+        app:layout_constraintLeft_toRightOf="@id/bt_add"/>
+
+    <TextView
+        android:id="@+id/text_transacoes"
+        android:textSize="@dimen/vintesp"
+        android:textColor="@color/black"
+        android:text="@string/transacoes_recentes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/trintasp"
+        android:layout_marginTop="@dimen/vintesp"
+        app:layout_constraintTop_toBottomOf="@id/bt_add"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:id="@+id/text_alternar"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:text="@string/alternar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/trintasp"
+        app:layout_constraintTop_toTopOf="@id/text_transacoes"
+        app:layout_constraintBottom_toBottomOf="@id/text_transacoes"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="240sp"
+        android:layout_marginTop="15sp"
+        app:layout_constraintTop_toBottomOf="@id/text_transacoes"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        tools:listitem="5"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:background="@color/white"
+        app:menu="@menu/bottom_navigation_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,7 +6,10 @@
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
+    <color name="gray">#FF555555</color>
+    <color name="gray_7">#FF777777</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="light_blue">#e5e8f1</color>
     <color name="card_end">#1352B3</color>
     <color name="card_center">#072249</color>
     <color name="card_start">#010914</color>

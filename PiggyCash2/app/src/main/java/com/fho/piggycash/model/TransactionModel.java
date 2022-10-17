@@ -3,6 +3,8 @@ package com.fho.piggycash.model;
 public class TransactionModel {
     private String nome;
     private double valor;
+    private String data;
+    private Integer isDeposito;
 
     public TransactionModel(String nome, double valor) {
         this.nome = nome;
@@ -23,5 +25,28 @@ public class TransactionModel {
 
     public void setValor(double valor) {
         this.valor = valor;
+    }
+
+    public String getData() {
+        return data;
+    }
+
+    public void setData(String data) {
+        this.data = data;
+    }
+
+    public Integer isDeposito() {
+        return isDeposito;
+    }
+
+    public boolean valueIsDeposito() {
+        if(isDeposito == 1)
+            return true;
+
+        return false;
+    }
+
+    public void setDeposito(Integer deposito) {
+        isDeposito = deposito;
     }
 }

@@ -7,6 +7,8 @@
         <item name="android:textSize">16sp</item>
         <item name="android:fontFamily">@font/inter</item>
         <item name="android:padding">16sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/gray</item>
         <item name="android:layout_marginTop">@dimen/trintasp</item>
         <item name="android:layout_marginLeft">40sp</item>
         <item name="android:layout_marginRight">40sp</item>
@@ -15,6 +17,7 @@
 
     <style name="ButtonLogin">
         <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/black</item>
         <item name="android:fontFamily">@font/inter</item>
         <item name="android:layout_width">240sp</item>
         <item name="android:layout_height">45sp</item>
@@ -54,5 +57,25 @@
         <item name="cornerSizeTopLeft">20sp</item>
         <item name="cornerSizeBottomRight">0dp</item>
         <item name="cornerSizeBottomLeft">0dp</item>
+    </style>
+
+    <style name="TransacoesText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="ButtonMain">
+        <item name="android:background">@drawable/item_transaction_background</item>
+        <item name="android:paddingTop">10sp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/inter</item>
+        <item name="android:lines">2</item>
+        <item name="android:layout_marginLeft">@dimen/trintasp</item>
+        <item name="android:layout_width">85sp</item>
+        <item name="android:layout_height">115sp</item>
+        <item name="android:layout_marginTop">@dimen/vintesp</item>
     </style>
 </resources>

@@ -4,156 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/light_blue"
     tools:context=".screen.MainActivity">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraint_card"
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragment_view"
         android:layout_width="match_parent"
-        android:layout_height="200sp"
-        android:layout_marginTop="@dimen/vintesp"
-        android:layout_marginLeft="@dimen/vintesp"
-        android:layout_marginRight="@dimen/vintesp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent">
-        <ImageView
-            android:id="@+id/img_card"
-            android:src="@drawable/card_background"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"/>
-        <TextView
-            android:id="@+id/text_nome"
-            android:textSize="@dimen/vintesp"
-            android:textColor="@color/white"
-            android:layout_marginTop="@dimen/vintesp"
-            android:layout_marginLeft="@dimen/vintesp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"/>
-        <TextView
-            android:id="@+id/text_valor"
-            android:text="@string/saldo_exemplo"
-            android:textSize="@dimen/vintesp"
-            android:textColor="@color/white"
-            android:layout_marginBottom="@dimen/vintesp"
-            android:layout_marginLeft="@dimen/vintesp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"/>
-        <ImageView
-            android:id="@+id/img_money"
-            android:src="@drawable/ic_money_op"
-            android:layout_width="300sp"
-            android:layout_height="300sp"
-            android:layout_marginRight="-75sp"
-            android:layout_marginBottom="-50sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintRight_toRightOf="parent"/>
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"/>
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/bt_add"
-        android:background="@drawable/add_money_background"
-        android:textSize="@dimen/vintesp"
-        android:text="@string/adicionar_dinheiro"
-        android:textColor="@color/green1"
-        android:layout_width="150sp"
-        android:layout_height="80sp"
-        android:layout_marginTop="@dimen/vintesp"
-        app:layout_constraintTop_toBottomOf="@id/constraint_card"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@id/bt_remove"/>
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/bt_remove"
-        android:background="@drawable/retire_money_background"
-        android:textSize="@dimen/vintesp"
-        android:text="@string/retirar_dinheiro"
-        android:textColor="@color/red1"
-        android:layout_width="150sp"
-        android:layout_height="80sp"
-        app:layout_constraintTop_toTopOf="@id/bt_add"
-        app:layout_constraintLeft_toRightOf="@id/bt_add"
-        app:layout_constraintRight_toRightOf="parent"/>
-
-    <TextView
-        android:id="@+id/text_transacoes"
-        android:textSize="@dimen/vintesp"
-        android:text="@string/transacoes_recentes"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/trintasp"
-        android:layout_marginTop="@dimen/vintesp"
-        app:layout_constraintTop_toBottomOf="@id/bt_add"
-        app:layout_constraintLeft_toLeftOf="parent"/>
-
-    <TextView
-        android:id="@+id/text_transacoes_all"
-        android:textSize="18sp"
-        android:text="@string/ver_todos"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginRight="@dimen/trintasp"
-        app:layout_constraintTop_toTopOf="@id/text_transacoes"
-        app:layout_constraintBottom_toBottomOf="@id/text_transacoes"
-        app:layout_constraintRight_toRightOf="parent"/>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraint_transacao_1"
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:background="@color/white"
+        app:menu="@menu/bottom_navigation_menu"
         android:layout_width="match_parent"
-        android:layout_height="60sp"
-        android:layout_marginTop="@dimen/vintesp"
-        app:layout_constraintTop_toBottomOf="@id/text_transacoes"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintLeft_toRightOf="parent">
-
-        <ImageView
-            android:id="@+id/img_transacao_1"
-            android:src="@drawable/ic_add_money"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/vintesp"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"/>
-
-        <TextView
-            android:id="@+id/text_nome_transacao_1"
-            android:text="@string/nome1"
-            android:textSize="18sp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toRightOf="@id/img_transacao_1"/>
-
-        <TextView
-            android:id="@+id/text_data_hora_transacao_1"
-            android:text="@string/data_hora1"
-            android:textSize="13sp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/text_nome_transacao_1"
-            app:layout_constraintLeft_toLeftOf="@id/text_nome_transacao_1"
-            app:layout_constraintRight_toRightOf="@id/text_nome_transacao_1"/>
-
-        <TextView
-            android:id="@+id/text_valor_transacao_1"
-            android:text="@string/preco1"
-            android:textSize="18sp"
-            android:layout_marginRight="@dimen/vintesp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintRight_toRightOf="parent"/>
-
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

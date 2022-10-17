@@ -4,8 +4,10 @@ import android.util.Log;
 import android.view.View;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 import com.fho.piggycash.model.TransactionModel;
+import com.fho.piggycash.model.TransactionModelData;
 import com.fho.piggycash.model.UserData;
 import com.fho.piggycash.util.ToastUtil;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -18,13 +20,22 @@ import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
 import com.google.firebase.auth.FirebaseAuthUserCollisionException;
 import com.google.firebase.auth.FirebaseAuthWeakPasswordException;
 import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.FirebaseFirestoreException;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class SignUp {
 
+    private final static String FORMAT_DATA = "dd/MM/yyyy";
     private static SignUp instance;
     private UserData userData;
     String[] mensagens = {"Preencha todos os campos", "Cadastro realizado com sucesso"};
@@ -41,7 +52,7 @@ public class SignUp {
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()){
 
-                    salvarDadosUsuario(userData);
+                    //salvarDadosUsuario(userData);
 
                     ToastUtil.showToast(view, mensagens[1]);
                 } else {
@@ -64,13 +75,13 @@ public class SignUp {
         });
     }
 
-    private void salvarDadosUsuario(UserData user){
+    public void salvarDadosUsuario(String nome, Double saldo){
 
         FirebaseFirestore db = FirebaseFirestore.getInstance();
 
         Map<String,Object> usuarios = new HashMap<>();
-        usuarios.put("user", user);
-
+        usuarios.put("nome", nome);
+        usuarios.put("saldo", saldo);
 
         String usuarioId = FirebaseAuth.getInstance().getCurrentUser().getUid();
 
@@ -94,29 +105,119 @@ public class SignUp {
 
         String usuarioId = FirebaseAuth.getInstance().getCurrentUser().getUid();
 
-        DocumentReference documentReference;
+        DocumentReference documentReference = db.collection("transacoes").document(usuarioId);
 
-        if(type)
-            documentReference = db.collection("transacao-adicionar").document(usuarioId);
-        else
-            documentReference = db.collection("transacao-retirar").document(usuarioId);
+        documentReference.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+            @Override
+            public void onSuccess(DocumentSnapshot documentSnapshot) {
+                Map<String, Object> map = documentSnapshot.getData();
+                List<TransactionModel> list;
 
-        documentReference.set(transaction).addOnSuccessListener(new OnSuccessListener<Void>() {
-            @Override
-            public void onSuccess(Void unused) {
-                ToastUtil.showToast(v, "Transação cadastrada com sucesso!");
-                Log.d("db","Sucesso ao salvar os dados");
-            }
-        }).addOnFailureListener(new OnFailureListener() {
-            @Override
-            public void onFailure(@NonNull Exception e) {
-                ToastUtil.showToast(v, "Erro ao cadastrar transação!");
-                Log.d("db","Erro ao salvar os dados: " + e.toString());
+                if(map != null && map.get("tmList") != null)
+                    list = (List<TransactionModel>) map.get("tmList");
+                else
+                    list = new ArrayList<TransactionModel>();
+
+                Date dataAtual = new Date();
+                DateFormat dateFormat = new SimpleDateFormat(FORMAT_DATA);
+
+                transaction.setData(dateFormat.format(dataAtual));
+                transaction.setDeposito(0);
+
+                if(type)
+                    transaction.setDeposito(1);
+
+                list.add(transaction);
+
+                TransactionModelData tData = new TransactionModelData(new ArrayList<TransactionModel>());
+                tData.setTmList(list);
+
+                documentReference.set(tData).addOnSuccessListener(new OnSuccessListener<Void>() {
+                    @Override
+                    public void onSuccess(Void unused) {
+                        ToastUtil.showToast(v, "Transação cadastrada com sucesso!");
+                        Log.d("db","Sucesso ao salvar os dados");
+                    }
+                }).addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        ToastUtil.showToast(v, "Erro ao cadastrar transação!");
+                        Log.d("db","Erro ao salvar os dados: " + e.toString());
+                    }
+                });
             }
         });
     }
 
-    private SignUp() {}
+
+    public Map<String, Map<String, Object>> getTransacao(View v){
+
+        String usuarioId = FirebaseAuth.getInstance().getCurrentUser().getUid();
+        FirebaseFirestore db = FirebaseFirestore.getInstance();
+
+        Map<String, Map<String,Object>> map = new HashMap<>();
+        //map.put("add", null);
+        map.put("retire", null);
+
+        Map<String, Object> map2;
+
+
+        DocumentReference docRef = db.collection("transacao-adicionar").document(usuarioId);
+        docRef.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+            @Override
+            public void onSuccess(DocumentSnapshot documentSnapshot) {
+                //ToastUtil.showToast(v, documentSnapshot.getData().toString());
+            }
+        }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
+                ToastUtil.showToast(v, e.toString());
+            }
+        });
+
+        docRef.addSnapshotListener(new EventListener<DocumentSnapshot>() {
+            @Override
+            public void onEvent(@Nullable DocumentSnapshot value, @Nullable FirebaseFirestoreException error) {
+                map.put("add", value.getData());
+            }
+        });
+
+        /*docRef = db.collection("transacao-retirar").document(usuarioId);
+        docRef.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+            @Override
+            public void onSuccess(DocumentSnapshot documentSnapshot) {
+                map.replace("add", (List<TransactionModel>) documentSnapshot.getData().get("tmList"));
+                ToastUtil.showToast(v, documentSnapshot.getData().toString());
+            }
+        }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
+                ToastUtil.showToast(v, e.toString());
+            }
+        });*/
+
+
+        ToastUtil.showToast(v, map.get("add").toString());
+
+        return map;
+    }
+
+    public void calculoSaldo(View v){
+        Map<String, Map<String, Object>> map = getTransacao(v);
+        //List<TransactionModel> lm = (List<TransactionModel>) map.get("add").get("tmList");
+
+        /*AtomicDouble a = new AtomicDouble(0.0);
+        map.get("add").stream().forEach(it -> a.addAndGet(it.getValor()));
+        Double addValue = a.get();
+        Log.i("Add Cash", addValue.toString());
+
+        map.get("retire").stream().forEach(it -> a.addAndGet(it.getValor()));
+        Double retireValue = a.get();
+        Log.i("Retire Cash", retireValue.toString());*/
+    }
+
+    private SignUp() {
+    }
 
     public static SignUp getInstance() {
         if (instance == null)

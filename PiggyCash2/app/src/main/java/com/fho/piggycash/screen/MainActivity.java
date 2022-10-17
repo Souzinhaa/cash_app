@@ -1,22 +1,40 @@
 package com.fho.piggycash.screen;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
+import androidx.fragment.app.FragmentContainerView;
+import androidx.fragment.app.FragmentManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
+import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.fho.piggycash.R;
+import com.fho.piggycash.adapter.TransacaoAdapter;
 import com.fho.piggycash.model.TransactionModel;
+import com.fho.piggycash.model.TransactionModelData;
+import com.fho.piggycash.model.UserData;
 import com.fho.piggycash.service.SignUp;
 import com.fho.piggycash.util.MaskEditUtil;
 import com.fho.piggycash.util.ToastUtil;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
+import com.google.android.material.navigation.NavigationBarView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
@@ -24,13 +42,16 @@ import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FirebaseFirestoreException;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+import java.util.concurrent.atomic.AtomicReference;
+
 public class MainActivity extends AppCompatActivity {
 
-    private String usuarioId, nome, email;
-    private FirebaseFirestore db = FirebaseFirestore.getInstance();
-    private TextView text_nome, text_valor;
-    private AppCompatButton bt_add, bt_remove;
-    private SignUp signUp = SignUp.getInstance();
+    private BottomNavigationView bottom_navigation;
+    private FragmentContainerView fragment_view;
+    private FragmentManager fm;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,78 +59,44 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         getSupportActionBar().hide();
 
-        iniciarComponentes2();
+        iniciarComponentes();
+        chamaMainFragment();
 
-        bt_add.setOnClickListener(new View.OnClickListener(){
+        bottom_navigation.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
-            public void onClick(View v){
-                showBottomSheetDialog(true);
-            }
-        });
-
-        bt_remove.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                showBottomSheetDialog(false);
-            }
-        });
-    }
-
-    @Override
-    protected void onStart() {
-        super.onStart();
-
-        iniciarComponentes1();
-
-        email = FirebaseAuth.getInstance().getCurrentUser().getEmail();
-        usuarioId = FirebaseAuth.getInstance().getCurrentUser().getUid();
-
-        DocumentReference documentReference = db.collection("Usuarios").document(usuarioId);
-
-        documentReference.addSnapshotListener(new EventListener<DocumentSnapshot>() {
-            @Override
-            public void onEvent(@Nullable DocumentSnapshot documentSnapshot, @Nullable FirebaseFirestoreException error) {
-                if(documentSnapshot != null){
-                    nome = documentSnapshot.getString("nome");
-                    text_valor.setText(documentSnapshot.getDouble("saldo").toString());
-                    text_nome.setText(nome);
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()) {
+                    case R.id.page_1:
+                        chamaMainFragment();
+                        break;
+                    case R.id.page_2:
+                        chamaProfileFragment();
+                        break;
                 }
+                return true;
             }
         });
     }
 
-    public void iniciarComponentes1(){
-        text_nome = findViewById(R.id.text_nome);
-        text_valor = findViewById(R.id.text_valor);
+    private void iniciarComponentes(){
+        bottom_navigation = findViewById(R.id.bottom_navigation);
+        fm = getSupportFragmentManager();
+        fragment_view = findViewById(R.id.fragment_view);
     }
 
-    public void iniciarComponentes2(){
-        bt_add = findViewById(R.id.bt_add);
-        bt_remove = findViewById(R.id.bt_remove);
+    private void chamaMainFragment() {
+        fm.beginTransaction()
+                .replace(R.id.fragment_view, MainFragment.class, null)
+                .setReorderingAllowed(true)
+                .addToBackStack(null)
+                .commit();
     }
 
-    private void showBottomSheetDialog(boolean function){
-        BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(this);
-        bottomSheetDialog.setContentView(R.layout.fragment_transacoes);
-
-        EditText edit_nome = bottomSheetDialog.findViewById(R.id.edit_valor);
-        EditText edit_valor = bottomSheetDialog.findViewById(R.id.edit_valor);
-        edit_valor.addTextChangedListener(MaskEditUtil.maskValue(edit_valor, MaskEditUtil.FORMAT_VALUE));
-
-        Button bt_cadastrar = bottomSheetDialog.findViewById(R.id.bt_cadastrar);
-
-        bt_cadastrar.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                if(function)
-                    signUp.salvarTransacao(v, new TransactionModel(String.valueOf(edit_nome.getText()), Double.parseDouble(MaskEditUtil.unmask(String.valueOf(edit_valor.getText())))), true);
-                else
-                    signUp.salvarTransacao(v, new TransactionModel(String.valueOf(edit_nome.getText()), Double.parseDouble(MaskEditUtil.unmask(String.valueOf(edit_valor.getText())))), true);
-            }
-
-
-        });
-
-        bottomSheetDialog.show();
+    private void chamaProfileFragment() {
+        fm.beginTransaction()
+                .replace(R.id.fragment_view, ProfileFragment.class, null)
+                .setReorderingAllowed(true)
+                .addToBackStack(null)
+                .commit();
     }
 }
