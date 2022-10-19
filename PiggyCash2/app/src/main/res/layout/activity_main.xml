@@ -11,11 +11,38 @@
         android:id="@+id/fragment_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout="@layout/fragment_main" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_img_view"
+        android:layout_margin="@dimen/vintesp"
+        app:cardCornerRadius="@dimen/trintasp"
+        android:layout_width="36sp"
+        android:layout_height="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+        <ImageView
+            android:id="@+id/img_main_profile"
+            android:src="@drawable/ic_perfil"
+            android:layout_gravity="center"
+            android:layout_width="60sp"
+            android:layout_height="60sp"/>
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/img_home"
+        android:background="@drawable/icon_swap"
+        android:layout_width="36sp"
+        android:layout_height="36sp"
+        android:layout_margin="@dimen/vintesp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
         android:background="@color/white"
+        android:visibility="invisible"
         app:menu="@menu/bottom_navigation_menu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

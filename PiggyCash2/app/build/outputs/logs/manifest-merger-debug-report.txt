@@ -11,6 +11,7 @@ MERGED from [androidx.appcompat:appcompat:1.5.1] C:\Users\Bruno\.gradle\caches\t
 MERGED from [com.google.firebase:firebase-core:21.1.1] C:\Users\Bruno\.gradle\caches\transforms-3\177912bfd3e718b06735508dbe1dc9fe\transformed\firebase-core-21.1.1\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-auth:21.0.8] C:\Users\Bruno\.gradle\caches\transforms-3\95a0bff3b5416f5f60fc9d8f7182e9b1\transformed\firebase-auth-21.0.8\AndroidManifest.xml:17:1-73:12
 MERGED from [com.google.firebase:firebase-firestore:24.3.1] C:\Users\Bruno\.gradle\caches\transforms-3\6dc2fecde572e233f1d413e55106639f\transformed\firebase-firestore-24.3.1\AndroidManifest.xml:2:1-26:12
+MERGED from [com.google.firebase:firebase-storage:20.0.1] C:\Users\Bruno\.gradle\caches\transforms-3\821fd80e3306ca175f867a59922dedf2\transformed\firebase-storage-20.0.1\AndroidManifest.xml:15:1-39:12
 MERGED from [com.google.firebase:firebase-analytics:21.1.1] C:\Users\Bruno\.gradle\caches\transforms-3\07c572253c44dd2a4c2866f68dd63e1b\transformed\firebase-analytics-21.1.1\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\Bruno\.gradle\caches\transforms-3\3cd33750a2fb07d55de37c248c8d8893\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.2] C:\Users\Bruno\.gradle\caches\transforms-3\7b9dd71c871917a9624b2c6c9843e48c\transformed\firebase-appcheck-interop-16.0.2\AndroidManifest.xml:15:1-26:12
@@ -97,6 +98,8 @@ MERGED from [com.google.firebase:firebase-auth:21.0.8] C:\Users\Bruno\.gradle\ca
 MERGED from [com.google.firebase:firebase-auth:21.0.8] C:\Users\Bruno\.gradle\caches\transforms-3\95a0bff3b5416f5f60fc9d8f7182e9b1\transformed\firebase-auth-21.0.8\AndroidManifest.xml:23:5-67
 MERGED from [com.google.firebase:firebase-firestore:24.3.1] C:\Users\Bruno\.gradle\caches\transforms-3\6dc2fecde572e233f1d413e55106639f\transformed\firebase-firestore-24.3.1\AndroidManifest.xml:14:5-67
 MERGED from [com.google.firebase:firebase-firestore:24.3.1] C:\Users\Bruno\.gradle\caches\transforms-3\6dc2fecde572e233f1d413e55106639f\transformed\firebase-firestore-24.3.1\AndroidManifest.xml:14:5-67
+MERGED from [com.google.firebase:firebase-storage:20.0.1] C:\Users\Bruno\.gradle\caches\transforms-3\821fd80e3306ca175f867a59922dedf2\transformed\firebase-storage-20.0.1\AndroidManifest.xml:27:5-67
+MERGED from [com.google.firebase:firebase-storage:20.0.1] C:\Users\Bruno\.gradle\caches\transforms-3\821fd80e3306ca175f867a59922dedf2\transformed\firebase-storage-20.0.1\AndroidManifest.xml:27:5-67
 MERGED from [com.google.android.gms:play-services-measurement-api:21.1.1] C:\Users\Bruno\.gradle\caches\transforms-3\e20fa19dc306427c7694b1a33f8b55f2\transformed\play-services-measurement-api-21.1.1\AndroidManifest.xml:22:5-67
 MERGED from [com.google.android.gms:play-services-measurement-api:21.1.1] C:\Users\Bruno\.gradle\caches\transforms-3\e20fa19dc306427c7694b1a33f8b55f2\transformed\play-services-measurement-api-21.1.1\AndroidManifest.xml:22:5-67
 MERGED from [com.google.firebase:firebase-installations:17.0.1] C:\Users\Bruno\.gradle\caches\transforms-3\69ac30e2c30831fcc2f56089b51c7a06\transformed\firebase-installations-17.0.1\AndroidManifest.xml:11:5-67
@@ -121,6 +124,8 @@ MERGED from [com.google.firebase:firebase-auth:21.0.8] C:\Users\Bruno\.gradle\ca
 MERGED from [com.google.firebase:firebase-auth:21.0.8] C:\Users\Bruno\.gradle\caches\transforms-3\95a0bff3b5416f5f60fc9d8f7182e9b1\transformed\firebase-auth-21.0.8\AndroidManifest.xml:26:5-71:19
 MERGED from [com.google.firebase:firebase-firestore:24.3.1] C:\Users\Bruno\.gradle\caches\transforms-3\6dc2fecde572e233f1d413e55106639f\transformed\firebase-firestore-24.3.1\AndroidManifest.xml:16:5-24:19
 MERGED from [com.google.firebase:firebase-firestore:24.3.1] C:\Users\Bruno\.gradle\caches\transforms-3\6dc2fecde572e233f1d413e55106639f\transformed\firebase-firestore-24.3.1\AndroidManifest.xml:16:5-24:19
+MERGED from [com.google.firebase:firebase-storage:20.0.1] C:\Users\Bruno\.gradle\caches\transforms-3\821fd80e3306ca175f867a59922dedf2\transformed\firebase-storage-20.0.1\AndroidManifest.xml:29:5-37:19
+MERGED from [com.google.firebase:firebase-storage:20.0.1] C:\Users\Bruno\.gradle\caches\transforms-3\821fd80e3306ca175f867a59922dedf2\transformed\firebase-storage-20.0.1\AndroidManifest.xml:29:5-37:19
 MERGED from [com.google.firebase:firebase-analytics:21.1.1] C:\Users\Bruno\.gradle\caches\transforms-3\07c572253c44dd2a4c2866f68dd63e1b\transformed\firebase-analytics-21.1.1\AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-analytics:21.1.1] C:\Users\Bruno\.gradle\caches\transforms-3\07c572253c44dd2a4c2866f68dd63e1b\transformed\firebase-analytics-21.1.1\AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\Bruno\.gradle\caches\transforms-3\3cd33750a2fb07d55de37c248c8d8893\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:7:5-8:19
@@ -247,6 +252,8 @@ MERGED from [com.google.firebase:firebase-auth:21.0.8] C:\Users\Bruno\.gradle\ca
 MERGED from [com.google.firebase:firebase-auth:21.0.8] C:\Users\Bruno\.gradle\caches\transforms-3\95a0bff3b5416f5f60fc9d8f7182e9b1\transformed\firebase-auth-21.0.8\AndroidManifest.xml:21:5-44
 MERGED from [com.google.firebase:firebase-firestore:24.3.1] C:\Users\Bruno\.gradle\caches\transforms-3\6dc2fecde572e233f1d413e55106639f\transformed\firebase-firestore-24.3.1\AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.firebase:firebase-firestore:24.3.1] C:\Users\Bruno\.gradle\caches\transforms-3\6dc2fecde572e233f1d413e55106639f\transformed\firebase-firestore-24.3.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:firebase-storage:20.0.1] C:\Users\Bruno\.gradle\caches\transforms-3\821fd80e3306ca175f867a59922dedf2\transformed\firebase-storage-20.0.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-storage:20.0.1] C:\Users\Bruno\.gradle\caches\transforms-3\821fd80e3306ca175f867a59922dedf2\transformed\firebase-storage-20.0.1\AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.firebase:firebase-analytics:21.1.1] C:\Users\Bruno\.gradle\caches\transforms-3\07c572253c44dd2a4c2866f68dd63e1b\transformed\firebase-analytics-21.1.1\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-analytics:21.1.1] C:\Users\Bruno\.gradle\caches\transforms-3\07c572253c44dd2a4c2866f68dd63e1b\transformed\firebase-analytics-21.1.1\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\Bruno\.gradle\caches\transforms-3\3cd33750a2fb07d55de37c248c8d8893\transformed\firebase-auth-interop-20.0.0\AndroidManifest.xml:5:5-44
@@ -383,6 +390,8 @@ uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.firebase:firebase-auth:21.0.8] C:\Users\Bruno\.gradle\caches\transforms-3\95a0bff3b5416f5f60fc9d8f7182e9b1\transformed\firebase-auth-21.0.8\AndroidManifest.xml:24:5-79
 MERGED from [com.google.firebase:firebase-firestore:24.3.1] C:\Users\Bruno\.gradle\caches\transforms-3\6dc2fecde572e233f1d413e55106639f\transformed\firebase-firestore-24.3.1\AndroidManifest.xml:13:5-79
 MERGED from [com.google.firebase:firebase-firestore:24.3.1] C:\Users\Bruno\.gradle\caches\transforms-3\6dc2fecde572e233f1d413e55106639f\transformed\firebase-firestore-24.3.1\AndroidManifest.xml:13:5-79
+MERGED from [com.google.firebase:firebase-storage:20.0.1] C:\Users\Bruno\.gradle\caches\transforms-3\821fd80e3306ca175f867a59922dedf2\transformed\firebase-storage-20.0.1\AndroidManifest.xml:26:5-79
+MERGED from [com.google.firebase:firebase-storage:20.0.1] C:\Users\Bruno\.gradle\caches\transforms-3\821fd80e3306ca175f867a59922dedf2\transformed\firebase-storage-20.0.1\AndroidManifest.xml:26:5-79
 MERGED from [com.google.android.gms:play-services-measurement-api:21.1.1] C:\Users\Bruno\.gradle\caches\transforms-3\e20fa19dc306427c7694b1a33f8b55f2\transformed\play-services-measurement-api-21.1.1\AndroidManifest.xml:23:5-79
 MERGED from [com.google.android.gms:play-services-measurement-api:21.1.1] C:\Users\Bruno\.gradle\caches\transforms-3\e20fa19dc306427c7694b1a33f8b55f2\transformed\play-services-measurement-api-21.1.1\AndroidManifest.xml:23:5-79
 MERGED from [com.google.firebase:firebase-installations:17.0.1] C:\Users\Bruno\.gradle\caches\transforms-3\69ac30e2c30831fcc2f56089b51c7a06\transformed\firebase-installations-17.0.1\AndroidManifest.xml:10:5-79
@@ -449,6 +458,8 @@ service#com.google.firebase.components.ComponentDiscoveryService
 ADDED from [com.google.firebase:firebase-auth:21.0.8] C:\Users\Bruno\.gradle\caches\transforms-3\95a0bff3b5416f5f60fc9d8f7182e9b1\transformed\firebase-auth-21.0.8\AndroidManifest.xml:64:9-70:19
 MERGED from [com.google.firebase:firebase-firestore:24.3.1] C:\Users\Bruno\.gradle\caches\transforms-3\6dc2fecde572e233f1d413e55106639f\transformed\firebase-firestore-24.3.1\AndroidManifest.xml:17:9-23:19
 MERGED from [com.google.firebase:firebase-firestore:24.3.1] C:\Users\Bruno\.gradle\caches\transforms-3\6dc2fecde572e233f1d413e55106639f\transformed\firebase-firestore-24.3.1\AndroidManifest.xml:17:9-23:19
+MERGED from [com.google.firebase:firebase-storage:20.0.1] C:\Users\Bruno\.gradle\caches\transforms-3\821fd80e3306ca175f867a59922dedf2\transformed\firebase-storage-20.0.1\AndroidManifest.xml:30:9-36:19
+MERGED from [com.google.firebase:firebase-storage:20.0.1] C:\Users\Bruno\.gradle\caches\transforms-3\821fd80e3306ca175f867a59922dedf2\transformed\firebase-storage-20.0.1\AndroidManifest.xml:30:9-36:19
 MERGED from [com.google.android.gms:play-services-measurement-api:21.1.1] C:\Users\Bruno\.gradle\caches\transforms-3\e20fa19dc306427c7694b1a33f8b55f2\transformed\play-services-measurement-api-21.1.1\AndroidManifest.xml:28:9-34:19
 MERGED from [com.google.android.gms:play-services-measurement-api:21.1.1] C:\Users\Bruno\.gradle\caches\transforms-3\e20fa19dc306427c7694b1a33f8b55f2\transformed\play-services-measurement-api-21.1.1\AndroidManifest.xml:28:9-34:19
 MERGED from [com.google.firebase:firebase-installations:17.0.1] C:\Users\Bruno\.gradle\caches\transforms-3\69ac30e2c30831fcc2f56089b51c7a06\transformed\firebase-installations-17.0.1\AndroidManifest.xml:15:9-21:19
@@ -475,6 +486,12 @@ ADDED from [com.google.firebase:firebase-firestore:24.3.1] C:\Users\Bruno\.gradl
 		ADDED from [com.google.firebase:firebase-firestore:24.3.1] C:\Users\Bruno\.gradle\caches\transforms-3\6dc2fecde572e233f1d413e55106639f\transformed\firebase-firestore-24.3.1\AndroidManifest.xml:22:17-82
 	android:name
 		ADDED from [com.google.firebase:firebase-firestore:24.3.1] C:\Users\Bruno\.gradle\caches\transforms-3\6dc2fecde572e233f1d413e55106639f\transformed\firebase-firestore-24.3.1\AndroidManifest.xml:21:17-111
+meta-data#com.google.firebase.components:com.google.firebase.storage.StorageRegistrar
+ADDED from [com.google.firebase:firebase-storage:20.0.1] C:\Users\Bruno\.gradle\caches\transforms-3\821fd80e3306ca175f867a59922dedf2\transformed\firebase-storage-20.0.1\AndroidManifest.xml:33:13-35:85
+	android:value
+		ADDED from [com.google.firebase:firebase-storage:20.0.1] C:\Users\Bruno\.gradle\caches\transforms-3\821fd80e3306ca175f867a59922dedf2\transformed\firebase-storage-20.0.1\AndroidManifest.xml:35:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-storage:20.0.1] C:\Users\Bruno\.gradle\caches\transforms-3\821fd80e3306ca175f867a59922dedf2\transformed\firebase-storage-20.0.1\AndroidManifest.xml:34:17-107
 uses-permission#android.permission.WAKE_LOCK
 ADDED from [com.google.android.gms:play-services-measurement-api:21.1.1] C:\Users\Bruno\.gradle\caches\transforms-3\e20fa19dc306427c7694b1a33f8b55f2\transformed\play-services-measurement-api-21.1.1\AndroidManifest.xml:24:5-68
 MERGED from [com.google.android.gms:play-services-measurement:21.1.1] C:\Users\Bruno\.gradle\caches\transforms-3\e4ef4719f34e687b32f4aced23eba5d2\transformed\play-services-measurement-21.1.1\AndroidManifest.xml:25:5-68

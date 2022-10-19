@@ -1,9 +1,11 @@
 package com.fho.piggycash.screen;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -21,11 +23,17 @@ import com.fho.piggycash.adapter.TransacaoAdapter;
 import com.fho.piggycash.model.TransactionModel;
 import com.fho.piggycash.service.SignUp;
 import com.fho.piggycash.util.MaskEditUtil;
+import com.fho.piggycash.util.ToastUtil;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageMetadata;
+import com.google.firebase.storage.StorageReference;
+import com.google.firebase.storage.UploadTask;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -34,13 +42,13 @@ import java.util.Map;
 public class MainFragment extends Fragment {
 
     private final SignUp signUp = SignUp.getInstance();
+    private final FirebaseStorage storage = FirebaseStorage.getInstance();
     private final FirebaseFirestore db = FirebaseFirestore.getInstance();
 
     private String usuarioId, nome;
     private TextView text_nome, text_valor, text_alternar;
     private AppCompatButton bt_add, bt_remove;
     private RecyclerView recycler_view;
-    private ImageView img_exit;
     private ProgressBar progressBar;
 
     public MainFragment(){
@@ -50,6 +58,9 @@ public class MainFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Window window = getActivity().getWindow();
+        window.setStatusBarColor(getActivity().getColor(R.color.light_blue));
+
         iniciarComponentes2();
 
         if(recycler_view != null)
@@ -58,11 +69,6 @@ public class MainFragment extends Fragment {
         bt_add.setOnClickListener(v -> showBottomSheetDialog(true));
 
         bt_remove.setOnClickListener(v -> showBottomSheetDialog(false));
-
-        img_exit.setOnClickListener(v -> {
-            telaLogin();
-            FirebaseAuth.getInstance().signOut();
-        });
 
         text_alternar.setOnClickListener(v -> {
             DialogMonthYearPicker pd = new DialogMonthYearPicker();
@@ -91,17 +97,16 @@ public class MainFragment extends Fragment {
         mostrarLista();
     }
 
-    public void iniciarComponentes1(){
+    private void iniciarComponentes1(){
         text_nome = getActivity().findViewById(R.id.text_nome);
         text_valor = getActivity().findViewById(R.id.text_valor);
         recycler_view = getActivity().findViewById(R.id.recycler_view);
     }
 
-    public void iniciarComponentes2(){
+    private void iniciarComponentes2(){
         bt_add = getActivity().findViewById(R.id.bt_add);
         bt_remove = getActivity().findViewById(R.id.bt_remove);
         text_alternar = getActivity().findViewById(R.id.text_alternar);
-        img_exit = getActivity().findViewById(R.id.img_exit);
         progressBar = getActivity().findViewById(R.id.progressBar);
     }
 
@@ -122,12 +127,17 @@ public class MainFragment extends Fragment {
         Button bt_cadastrar = bottomSheetDialog.findViewById(R.id.bt_cadastrar);
         ProgressBar progressBar = bottomSheetDialog.findViewById(R.id.progressBar);
 
-        bt_cadastrar.setOnClickListener(v -> cadastrarTransacao(v, bt_cadastrar, progressBar, edit_nome, edit_valor, bottomSheetDialog, function));
+        bt_cadastrar.setOnClickListener(v -> {
+            if(validarCampos(edit_nome.getText().toString(), edit_valor.getText().toString()))
+                cadastrarTransacao(v, bt_cadastrar, progressBar, edit_nome, edit_valor, bottomSheetDialog, function);
+            else
+                ToastUtil.showToast(v, "Os campos devem ser preenchidos corretamente");
+        });
 
         bottomSheetDialog.show();
     }
 
-    public void cadastrarTransacao(View v, Button bt_cadastrar, ProgressBar progressBar, TextView edit_nome, TextView edit_valor, BottomSheetDialog bottomSheetDialog, boolean function){
+    private void cadastrarTransacao(View v, Button bt_cadastrar, ProgressBar progressBar, TextView edit_nome, TextView edit_valor, BottomSheetDialog bottomSheetDialog, boolean function){
         bt_cadastrar.setVisibility(View.INVISIBLE);
         progressBar.setVisibility(View.VISIBLE);
 
@@ -152,7 +162,14 @@ public class MainFragment extends Fragment {
         }, 1200);
     }
 
-    public void mostrarLista(){
+    private boolean validarCampos(String nome, String valor){
+        if(nome != null && nome.length() > 2 && valor != null && !valor.equalsIgnoreCase("R$x,xx") && valor.length() > 1)
+            return true;
+
+        return false;
+    }
+
+    private void mostrarLista(){
         FirebaseFirestore db = FirebaseFirestore.getInstance();
 
         String usuarioId = FirebaseAuth.getInstance().getCurrentUser().getUid();
@@ -169,20 +186,11 @@ public class MainFragment extends Fragment {
                 list = new ArrayList<>();
 
             recycler_view.setAdapter(new TransacaoAdapter(list));
-        });
 
-        recycler_view.setLayoutManager(new LinearLayoutManager(getActivity()));
-
-        new Handler().postDelayed(() -> {
             recycler_view.setVisibility(View.VISIBLE);
             progressBar.setVisibility(View.INVISIBLE);
-        }, 3000);
+        });
+        recycler_view.setLayoutManager(new LinearLayoutManager(getActivity()));
     }
-
-    private void telaLogin(){
-        Intent intent = new Intent(getActivity(), LoginScreen.class);
-        startActivity(intent);
-    }
-
 
 }

@@ -76,4 +76,27 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@id/bt_cadastrar"/>
 
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_img_view_sign"
+        app:cardCornerRadius="120sp"
+        android:layout_width="132sp"
+        android:layout_height="132sp"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">
+        <ImageView
+            android:id="@+id/img_profile"
+            android:src="@color/white"
+            android:layout_gravity="center"
+            android:layout_width="220sp"
+            android:layout_height="220sp"/>
+        <TextView
+            android:id="@+id/text_overlay_sign_up"
+            android:textSize="40sp"
+            android:fontFamily="serif"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </androidx.cardview.widget.CardView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

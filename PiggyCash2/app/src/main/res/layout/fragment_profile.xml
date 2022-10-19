@@ -4,18 +4,80 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/light_blue"
+    android:background="@drawable/profile_background"
     tools:context=".screen.MainActivity">
 
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_img_view_profile"
+        android:layout_marginTop="45sp"
+        android:layout_marginLeft="@dimen/vintesp"
+        app:cardCornerRadius="120sp"
+        android:layout_width="132sp"
+        android:layout_height="132sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">
+        <ImageView
+            android:id="@+id/img_profile"
+            android:src="@color/white"
+            android:layout_gravity="center"
+            android:layout_width="220sp"
+            android:layout_height="220sp"/>
+    </androidx.cardview.widget.CardView>
+    
     <TextView
-        android:id="@+id/text_titulo"
+        android:id="@+id/text_nome_perfil"
         style="@style/TextLogin"
-        android:text="LOGIN"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="@dimen/vintesp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="24sp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textSize="16sp"
+        app:layout_constraintLeft_toRightOf="@id/card_img_view_profile"
+        app:layout_constraintTop_toTopOf="@id/card_img_view_profile" />
+
+    <TextView
+        android:id="@+id/text_funcao"
+        style="@style/TextLogin"
+        android:layout_marginTop="20sp"
+        android:textColor="@color/gray"
+        android:layout_marginLeft="@dimen/vintesp"
+        android:text="@string/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toRightOf="@id/card_img_view_profile"
+        app:layout_constraintTop_toBottomOf="@id/text_nome_perfil" />
+
+    <LinearLayout
+        android:id="@+id/layout_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/vintesp"
+        app:layout_constraintTop_toBottomOf="@id/card_img_view_profile">
+        <EditText
+            android:id="@+id/edit_email"
+            android:hint="@string/email"
+            style="@style/EditTextLogin"
+            android:textColor="@color/gray"
+            android:inputType="textEmailAddress"
+            android:drawableLeft="@drawable/ic_email"
+            android:enabled="false"
+            app:layout_constraintTop_toBottomOf="@id/text_subtitulo"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_exit"
+        android:textColor="@color/white"
+        android:text="@string/sair"
+        android:background="@drawable/button_exit_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40sp"
+        android:layout_marginRight="40sp"
+        android:layout_marginBottom="100sp"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1217,6 +1217,7 @@ color background_floating_material_light
 color background_material_dark
 color background_material_light
 color black
+color blue
 color bright_foreground_disabled_material_dark
 color bright_foreground_disabled_material_light
 color bright_foreground_inverse_material_dark
@@ -2499,6 +2500,7 @@ drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
 drawable button_background
+drawable button_exit_background
 drawable card_background
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
@@ -2532,6 +2534,7 @@ drawable ic_arrow_forward
 drawable ic_clock_black_24dp
 drawable ic_email
 drawable ic_exit
+drawable ic_filter_list
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
@@ -2548,8 +2551,11 @@ drawable ic_mtrl_chip_close_circle
 drawable ic_perfil
 drawable ic_person
 drawable ic_retire_money
+drawable ic_swap
 drawable icon_depositar
 drawable icon_retirar_cash
+drawable icon_swap
+drawable img_profile
 drawable item_transaction_background
 drawable list_transaction_background
 drawable m3_appbar_background
@@ -2593,6 +2599,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable profile_background
 drawable retire_money_background
 drawable test_custom_background
 drawable test_level_drawable
@@ -2600,6 +2607,7 @@ drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable transaction_background
 font inter
+font inter_bold
 id ALT
 id BOTTOM_END
 id BOTTOM_START
@@ -2708,12 +2716,16 @@ id browser_actions_menu_items
 id browser_actions_menu_view
 id bt_add
 id bt_cadastrar
+id bt_exit
 id bt_login
 id bt_remove
 id buttonPanel
 id cache_measures
 id callMeasure
 id cancel_button
+id card_img_view
+id card_img_view_profile
+id card_img_view_sign
 id carryVelocity
 id center
 id centerCrop
@@ -2846,9 +2858,11 @@ id ignore
 id ignoreRequest
 id image
 id img_card
-id img_exit
+id img_home
 id img_logo
+id img_main_profile
 id img_money
+id img_profile
 id img_transacao
 id immediateStop
 id included
@@ -2861,6 +2875,7 @@ id jumpToEnd
 id jumpToStart
 id labeled
 id layout
+id layout_info
 id left
 id leftToRight
 id legacy
@@ -3073,12 +3088,15 @@ id text_alternar
 id text_bottom
 id text_cadastro
 id text_data_transacao
+id text_funcao
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
 id text_nome
 id text_nome_app
+id text_nome_perfil
 id text_nome_transacao
+id text_overlay_sign_up
 id text_subtitulo
 id text_titulo
 id text_titulo2
@@ -3228,7 +3246,6 @@ layout abc_tooltip
 layout activity_login_screen
 layout activity_main
 layout activity_sign_in_screen
-layout backup_activity_main
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
 layout custom_dialog
@@ -3408,6 +3425,7 @@ string fab_transformation_sheet_behavior
 string fallback_menu_item_copy_link
 string fallback_menu_item_open_in_browser
 string fallback_menu_item_share_link
+string filtrar
 string gcm_defaultSenderId
 string google_api_key
 string google_app_id
@@ -3508,6 +3526,7 @@ string preco1
 string project_id
 string retirada_confirmada
 string retirar_dinheiro
+string sair
 string saldo
 string saldo_exemplo
 string search_menu_title

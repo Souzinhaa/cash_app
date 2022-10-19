@@ -8,6 +8,7 @@
     <string name="retirar_dinheiro">Retirar</string>
     <string name="transacoes_recentes">Transações Recentes</string>
     <string name="alternar">Alternar</string>
+    <string name="filtrar">Filtrar</string>
     <string name="nome1">Lanche Faria Lima</string>
     <string name="preco1">- R$24,00</string>
     <string name="data_hora1">12:31 AM / Ago 30</string>
@@ -15,6 +16,7 @@
     <string name="senha">Senha</string>
     <string name="nome">Nome</string>
     <string name="login">Login</string>
+    <string name="sair">Sair</string>
     <string name="cadastrar_transacao">Cadastrar Nova Transação</string>
     <string name="nome_transacao">Nome Transação</string>
     <string name="valor_transacao">Valor Transação</string>

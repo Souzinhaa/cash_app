@@ -90,6 +90,9 @@ public class LoginScreen extends AppCompatActivity {
     }
 
     private void autenticarUsuario(View v){
+        progressBar.setVisibility(View.VISIBLE);
+        bt_entrar.setVisibility(View.INVISIBLE);
+
         String email = edit_email.getText().toString();
         String senha = edit_senha.getText().toString();
 
@@ -97,15 +100,7 @@ public class LoginScreen extends AppCompatActivity {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()){
-                    progressBar.setVisibility(View.VISIBLE);
-                    bt_entrar.setVisibility(View.INVISIBLE);
-
-                    new Handler().postDelayed(new Runnable() {
-                        @Override
-                        public void run() {
-                            telaPrincipal();
-                        }
-                    }, 3000);
+                    telaPrincipal();
                 } else {
                     String erro;
 

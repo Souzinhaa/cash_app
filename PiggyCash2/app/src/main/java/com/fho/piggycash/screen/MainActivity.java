@@ -10,11 +10,16 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.Looper;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.EditText;
@@ -34,6 +39,7 @@ import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationBarView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentReference;
@@ -41,17 +47,27 @@ import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FirebaseFirestoreException;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
 
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 import java.util.concurrent.atomic.AtomicReference;
 
 public class MainActivity extends AppCompatActivity {
 
-    private BottomNavigationView bottom_navigation;
+    private final FirebaseStorage storage = FirebaseStorage.getInstance();
     private FragmentContainerView fragment_view;
+    private ImageView img_profile, img_home;
     private FragmentManager fm;
+    private Window window;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,28 +76,34 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().hide();
 
         iniciarComponentes();
-        chamaMainFragment();
 
-        bottom_navigation.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
+        img_home.setOnClickListener(new View.OnClickListener() {
             @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                switch (item.getItemId()) {
-                    case R.id.page_1:
-                        chamaMainFragment();
-                        break;
-                    case R.id.page_2:
-                        chamaProfileFragment();
-                        break;
-                }
-                return true;
+            public void onClick(View v) {
+                chamaMainFragment();
+            }
+        });
+
+        img_profile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                chamaProfileFragment();
             }
         });
     }
 
     private void iniciarComponentes(){
-        bottom_navigation = findViewById(R.id.bottom_navigation);
+        iniciarImagem();
         fm = getSupportFragmentManager();
         fragment_view = findViewById(R.id.fragment_view);
+        img_home = findViewById(R.id.img_home);
+        window = getWindow();
+        chamaMainFragment();
+    }
+
+    private void iniciarImagem(){
+        img_profile = findViewById(R.id.img_main_profile);
+        getImage();
     }
 
     private void chamaMainFragment() {
@@ -98,5 +120,27 @@ public class MainActivity extends AppCompatActivity {
                 .setReorderingAllowed(true)
                 .addToBackStack(null)
                 .commit();
+    }
+
+    public void getImage(){
+        String usuarioId = FirebaseAuth.getInstance().getCurrentUser().getUid();
+        final String path = "usuarios/perfil/" + usuarioId + ".png";
+        StorageReference reference = storage.getReference(path);
+
+        reference.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+            @Override
+            public void onSuccess(Uri uri) {
+                try {String urlS = uri.toString();
+                    URL url = new URL(urlS);
+                    InputStream urlStream = url.openStream();
+                    Bitmap image = BitmapFactory.decodeStream(urlStream);
+                    img_profile.setImageBitmap(image);
+                } catch (MalformedURLException e) {
+                    e.printStackTrace();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
     }
 }
