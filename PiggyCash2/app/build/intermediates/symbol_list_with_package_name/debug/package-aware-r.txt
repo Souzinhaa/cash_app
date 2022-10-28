@@ -2633,6 +2633,9 @@ drawable common_google_signin_btn_text_light
 drawable common_google_signin_btn_text_light_focused
 drawable common_google_signin_btn_text_light_normal
 drawable common_google_signin_btn_text_light_normal_background
+drawable custom_email_item
+drawable custom_lock_item
+drawable custom_person_item
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
@@ -2646,13 +2649,15 @@ drawable ic_add_money
 drawable ic_arrow_forward
 drawable ic_calendar
 drawable ic_clock_black_24dp
-drawable ic_email
+drawable ic_email_focused
+drawable ic_email_primary
 drawable ic_exit
 drawable ic_filter_list
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
-drawable ic_lock
+drawable ic_lock_focused
+drawable ic_lock_primary
 drawable ic_m3_chip_check
 drawable ic_m3_chip_checked_circle
 drawable ic_m3_chip_close
@@ -2663,7 +2668,8 @@ drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_perfil
-drawable ic_person
+drawable ic_person_focused
+drawable ic_person_primary
 drawable ic_retire_money
 drawable ic_swap
 drawable icon_depositar

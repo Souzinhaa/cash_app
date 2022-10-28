@@ -12,32 +12,36 @@
         "source": "C:\\Users\\Bruno\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-main-37:\\mipmap-hdpi\\ic_launcher_s.png"
     },
     {
-        "merged": "C:\\Users\\Bruno\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-merged_res-35:\\mipmap-xxhdpi_ic_launcher_s.png.flat",
-        "source": "C:\\Users\\Bruno\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-main-37:\\mipmap-xxhdpi\\ic_launcher_s.png"
-    },
-    {
         "merged": "C:\\Users\\Bruno\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-merged_res-35:\\drawable_add_money_background.xml.flat",
         "source": "C:\\Users\\Bruno\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-main-37:\\drawable\\add_money_background.xml"
     },
     {
-        "merged": "C:\\Users\\Bruno\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-merged_res-35:\\xml_data_extraction_rules.xml.flat",
-        "source": "C:\\Users\\Bruno\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-main-37:\\xml\\data_extraction_rules.xml"
+        "merged": "C:\\Users\\Bruno\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-merged_res-35:\\mipmap-xxhdpi_ic_launcher_s.png.flat",
+        "source": "C:\\Users\\Bruno\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-main-37:\\mipmap-xxhdpi\\ic_launcher_s.png"
     },
     {
         "merged": "C:\\Users\\Bruno\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-merged_res-35:\\mipmap-mdpi_ic_launcher_s_foreground.png.flat",
         "source": "C:\\Users\\Bruno\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-main-37:\\mipmap-mdpi\\ic_launcher_s_foreground.png"
     },
     {
+        "merged": "C:\\Users\\Bruno\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-merged_res-35:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\Bruno\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-main-37:\\xml\\data_extraction_rules.xml"
+    },
+    {
         "merged": "C:\\Users\\Bruno\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-merged_res-35:\\drawable_retire_money_background.xml.flat",
         "source": "C:\\Users\\Bruno\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-main-37:\\drawable\\retire_money_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Bruno\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-merged_res-35:\\mipmap-xxxhdpi_ic_launcher_s_foreground.png.flat",
+        "source": "C:\\Users\\Bruno\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-main-37:\\mipmap-xxxhdpi\\ic_launcher_s_foreground.png"
     },
     {
         "merged": "C:\\Users\\Bruno\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-merged_res-35:\\mipmap-xxhdpi_ic_launcher_s_foreground.png.flat",
         "source": "C:\\Users\\Bruno\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-main-37:\\mipmap-xxhdpi\\ic_launcher_s_foreground.png"
     },
     {
-        "merged": "C:\\Users\\Bruno\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-merged_res-35:\\mipmap-xxxhdpi_ic_launcher_s_foreground.png.flat",
-        "source": "C:\\Users\\Bruno\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-main-37:\\mipmap-xxxhdpi\\ic_launcher_s_foreground.png"
+        "merged": "com.fho.piggycash.app-merged_res-35:/drawable_ic_person_focused.xml.flat",
+        "source": "com.fho.piggycash.app-main-37:/drawable/ic_person_focused.xml"
     },
     {
         "merged": "C:\\Users\\Bruno\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-merged_res-35:\\mipmap-xxhdpi_ic_launcher_foreground.png.flat",
@@ -76,12 +80,12 @@
         "source": "C:\\Users\\Bruno\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-main-37:\\drawable\\ic_arrow_forward.xml"
     },
     {
-        "merged": "C:\\Users\\Bruno\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-merged_res-35:\\mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
-        "source": "C:\\Users\\Bruno\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-main-37:\\mipmap-xxxhdpi\\ic_launcher_foreground.png"
+        "merged": "C:\\Users\\Bruno\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-merged_res-35:\\drawable_custom_person_item.xml.flat",
+        "source": "C:\\Users\\Bruno\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-main-37:\\drawable\\custom_person_item.xml"
     },
     {
-        "merged": "com.fho.piggycash.app-merged_res-35:/layout_fragment_main.xml.flat",
-        "source": "com.fho.piggycash.app-main-37:/layout/fragment_main.xml"
+        "merged": "C:\\Users\\Bruno\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-merged_res-35:\\mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\Bruno\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-main-37:\\mipmap-xxxhdpi\\ic_launcher_foreground.png"
     },
     {
         "merged": "C:\\Users\\Bruno\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-merged_res-35:\\drawable-v24_ic_launcher_foreground.xml.flat",
@@ -124,8 +128,16 @@
         "source": "C:\\Users\\Bruno\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-main-37:\\drawable\\ic_perfil.png"
     },
     {
+        "merged": "com.fho.piggycash.app-merged_res-35:/drawable_ic_lock_focused.xml.flat",
+        "source": "com.fho.piggycash.app-main-37:/drawable/ic_lock_focused.xml"
+    },
+    {
         "merged": "C:\\Users\\Bruno\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-merged_res-35:\\layout_activity_main.xml.flat",
         "source": "C:\\Users\\Bruno\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-main-37:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "com.fho.piggycash.app-merged_res-35:/drawable_ic_email_primary.xml.flat",
+        "source": "com.fho.piggycash.app-main-37:/drawable/ic_email_primary.xml"
     },
     {
         "merged": "C:\\Users\\Bruno\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-merged_res-35:\\mipmap-mdpi_ic_launcher.png.flat",
@@ -168,8 +180,16 @@
         "source": "C:\\Users\\Bruno\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-main-37:\\mipmap-xhdpi\\ic_launcher_round.png"
     },
     {
+        "merged": "C:\\Users\\Bruno\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-merged_res-35:\\drawable_ic_person_primary.xml.flat",
+        "source": "C:\\Users\\Bruno\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-main-37:\\drawable\\ic_person_primary.xml"
+    },
+    {
         "merged": "C:\\Users\\Bruno\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-merged_res-35:\\mipmap-hdpi_ic_launcher_s_round.png.flat",
         "source": "C:\\Users\\Bruno\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-main-37:\\mipmap-hdpi\\ic_launcher_s_round.png"
+    },
+    {
+        "merged": "com.fho.piggycash.app-merged_res-35:/layout_activity_login_screen.xml.flat",
+        "source": "com.fho.piggycash.app-main-37:/layout/activity_login_screen.xml"
     },
     {
         "merged": "C:\\Users\\Bruno\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-merged_res-35:\\mipmap-hdpi_ic_launcher_s_foreground.png.flat",
@@ -178,6 +198,10 @@
     {
         "merged": "C:\\Users\\Bruno\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-merged_res-35:\\drawable_ic_launcher_background.xml.flat",
         "source": "C:\\Users\\Bruno\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-main-37:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.fho.piggycash.app-merged_res-35:/drawable_ic_lock_primary.xml.flat",
+        "source": "com.fho.piggycash.app-main-37:/drawable/ic_lock_primary.xml"
     },
     {
         "merged": "C:\\Users\\Bruno\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-merged_res-35:\\menu_bottom_navigation_menu.xml.flat",
@@ -212,6 +236,10 @@
         "source": "C:\\Users\\Bruno\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-main-37:\\drawable\\ic_money.xml"
     },
     {
+        "merged": "com.fho.piggycash.app-merged_res-35:/layout_activity_sign_in_screen.xml.flat",
+        "source": "com.fho.piggycash.app-main-37:/layout/activity_sign_in_screen.xml"
+    },
+    {
         "merged": "C:\\Users\\Bruno\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-merged_res-35:\\layout_fragment_transacoes.xml.flat",
         "source": "C:\\Users\\Bruno\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-main-37:\\layout\\fragment_transacoes.xml"
     },
@@ -226,6 +254,18 @@
     {
         "merged": "C:\\Users\\Bruno\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-merged_res-35:\\mipmap-xxxhdpi_ic_launcher_s.png.flat",
         "source": "C:\\Users\\Bruno\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-main-37:\\mipmap-xxxhdpi\\ic_launcher_s.png"
+    },
+    {
+        "merged": "com.fho.piggycash.app-merged_res-35:/layout_fragment_profile.xml.flat",
+        "source": "com.fho.piggycash.app-main-37:/layout/fragment_profile.xml"
+    },
+    {
+        "merged": "com.fho.piggycash.app-merged_res-35:/drawable_ic_email_focused.xml.flat",
+        "source": "com.fho.piggycash.app-main-37:/drawable/ic_email_focused.xml"
+    },
+    {
+        "merged": "com.fho.piggycash.app-merged_res-35:/drawable_custom_lock_item.xml.flat",
+        "source": "com.fho.piggycash.app-main-37:/drawable/custom_lock_item.xml"
     },
     {
         "merged": "C:\\Users\\Bruno\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-merged_res-35:\\layout_activity_sign_in_screen.xml.flat",
@@ -256,6 +296,10 @@
         "source": "C:\\Users\\Bruno\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-main-37:\\drawable\\ic_add_money.xml"
     },
     {
+        "merged": "com.fho.piggycash.app-merged_res-35:/drawable_custom_email_item.xml.flat",
+        "source": "com.fho.piggycash.app-main-37:/drawable/custom_email_item.xml"
+    },
+    {
         "merged": "C:\\Users\\Bruno\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-merged_res-35:\\mipmap-hdpi_ic_launcher_foreground.png.flat",
         "source": "C:\\Users\\Bruno\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-main-37:\\mipmap-hdpi\\ic_launcher_foreground.png"
     },
@@ -266,6 +310,10 @@
     {
         "merged": "C:\\Users\\Bruno\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-merged_res-35:\\mipmap-hdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\Bruno\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-main-37:\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Bruno\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-merged_res-35:\\drawable_ic_person_focused.xml.flat",
+        "source": "C:\\Users\\Bruno\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-main-37:\\drawable\\ic_person_focused.xml"
     },
     {
         "merged": "C:\\Users\\Bruno\\.gradle\\daemon\\7.4\\com.fho.piggycash.app-merged_res-35:\\drawable_button_exit_background.xml.flat",

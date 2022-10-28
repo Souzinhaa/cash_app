@@ -61,7 +61,7 @@
             style="@style/EditTextLogin"
             android:textColor="@color/gray"
             android:inputType="textEmailAddress"
-            android:drawableLeft="@drawable/ic_email"
+            android:drawableLeft="@drawable/ic_email_primary"
             android:enabled="false"
             app:layout_constraintTop_toBottomOf="@id/text_subtitulo"
             app:layout_constraintLeft_toLeftOf="parent"

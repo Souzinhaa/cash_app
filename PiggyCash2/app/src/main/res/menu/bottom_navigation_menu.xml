@@ -8,6 +8,6 @@
     <item
         android:id="@+id/page_2"
         android:enabled="true"
-        android:icon="@drawable/ic_person"
+        android:icon="@drawable/ic_person_primary"
         android:title="@string/perfil"/>
 </menu>

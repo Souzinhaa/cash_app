@@ -31,7 +31,7 @@
         style="@style/EditTextLogin"
         android:layout_marginTop="50sp"
         android:inputType="textEmailAddress"
-        android:drawableLeft="@drawable/ic_email"
+        android:drawableLeft="@drawable/custom_email_item"
         app:layout_constraintTop_toBottomOf="@id/text_subtitulo"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"/>
@@ -41,7 +41,7 @@
         android:hint="@string/senha"
         style="@style/EditTextLogin"
         android:inputType="numberPassword"
-        android:drawableLeft="@drawable/ic_lock"
+        android:drawableLeft="@drawable/custom_lock_item"
         app:layout_constraintTop_toBottomOf="@id/edit_email"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"/>
@@ -51,7 +51,7 @@
         android:hint="@string/nome"
         style="@style/EditTextLogin"
         android:inputType="text"
-        android:drawableLeft="@drawable/ic_email"
+        android:drawableLeft="@drawable/custom_person_item"
         app:layout_constraintTop_toBottomOf="@id/edit_senha"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"/>
