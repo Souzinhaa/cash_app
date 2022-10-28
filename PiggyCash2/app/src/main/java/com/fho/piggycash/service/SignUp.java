@@ -28,6 +28,7 @@ import com.google.firebase.firestore.FirebaseFirestoreException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
@@ -39,6 +40,8 @@ public class SignUp {
     private static SignUp instance;
     private UserData userData;
     String[] mensagens = {"Preencha todos os campos", "Cadastro realizado com sucesso"};
+    public Integer month, year;
+    public int attDate = 1;
 
     public void iniciarUsuario(UserData user){
         userData = user;
@@ -214,6 +217,19 @@ public class SignUp {
         map.get("retire").stream().forEach(it -> a.addAndGet(it.getValor()));
         Double retireValue = a.get();
         Log.i("Retire Cash", retireValue.toString());*/
+    }
+
+    public void updateMonthYear(Integer newMonth, Integer newYear){
+        if(newMonth == null && newYear == null) {
+            Calendar cal = Calendar.getInstance();
+            month = cal.get(Calendar.MONTH)+1;
+            year = cal.get(Calendar.YEAR);
+        } else if(newMonth == 0 && newYear == 0){
+
+        } else {
+            month = newMonth;
+            year = newYear;
+        }
     }
 
     private SignUp() {

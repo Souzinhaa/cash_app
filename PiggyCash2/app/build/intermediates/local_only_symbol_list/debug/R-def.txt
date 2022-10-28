@@ -37,6 +37,7 @@ drawable card_background
 drawable edit_background
 drawable ic_add_money
 drawable ic_arrow_forward
+drawable ic_calendar
 drawable ic_email
 drawable ic_exit
 drawable ic_filter_list
@@ -65,6 +66,7 @@ id bt_add
 id bt_cadastrar
 id bt_exit
 id bt_login
+id bt_month
 id bt_remove
 id card_img_view
 id card_img_view_profile
@@ -106,6 +108,7 @@ id text_titulo_transacao
 id text_transacoes
 id text_valor
 id text_valor_transacao
+id view_main
 layout activity_login_screen
 layout activity_main
 layout activity_sign_in_screen

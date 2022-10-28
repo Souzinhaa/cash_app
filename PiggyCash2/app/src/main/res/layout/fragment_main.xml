@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/light_blue"
-    tools:context=".screen.MainActivity">
+    tools:context=".screen.MainActivity"
+    android:id="@+id/view_main">
 
     <ImageView
         android:id="@+id/img_logo"
@@ -84,7 +85,8 @@
         android:text="@string/novo_deposito"
         android:drawableTop="@drawable/icon_depositar"
         app:layout_constraintTop_toBottomOf="@id/constraint_card"
-        app:layout_constraintLeft_toLeftOf="parent"/>
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/bt_remove"/>
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/bt_remove"
@@ -92,7 +94,18 @@
         android:text="@string/novo_saque"
         android:drawableTop="@drawable/icon_retirar_cash"
         app:layout_constraintTop_toBottomOf="@id/constraint_card"
-        app:layout_constraintLeft_toRightOf="@id/bt_add"/>
+        app:layout_constraintLeft_toRightOf="@id/bt_add"
+        app:layout_constraintRight_toLeftOf="@id/bt_month"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_month"
+        style="@style/ButtonMain"
+        android:text=""
+        android:paddingTop="20sp"
+        android:drawableTop="@drawable/ic_calendar"
+        app:layout_constraintTop_toBottomOf="@id/constraint_card"
+        app:layout_constraintLeft_toRightOf="@id/bt_remove"
+        app:layout_constraintRight_toRightOf="parent"/>
 
     <TextView
         android:id="@+id/text_transacoes"
@@ -110,6 +123,7 @@
         android:id="@+id/text_alternar"
         android:textSize="18sp"
         android:textColor="@color/black"
+        android:visibility="invisible"
         android:drawableLeft="@drawable/ic_filter_list"
         android:drawablePadding="2sp"
         android:text="@string/filtrar"

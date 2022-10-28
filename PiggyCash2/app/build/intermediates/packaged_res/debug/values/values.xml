@@ -20,7 +20,7 @@
         <item>@font/inter_bold</item>
     </array>
     <color name="black">#FF000000</color>
-    <color name="blue">#84ACFF</color>
+    <color name="blue">#FF84ACFF</color>
     <color name="button_color">#84ACFF</color>
     <color name="card_add">#F5DEB3</color>
     <color name="card_center">#072249</color>
@@ -106,7 +106,6 @@
         <item name="android:textColor">@color/black</item>
         <item name="android:fontFamily">@font/inter</item>
         <item name="android:lines">2</item>
-        <item name="android:layout_marginLeft">@dimen/trintasp</item>
         <item name="android:layout_width">85sp</item>
         <item name="android:layout_height">115sp</item>
         <item name="android:layout_marginTop">@dimen/vintesp</item>
@@ -149,10 +148,10 @@
     <style name="Theme.PiggyCash" parent="Theme.MaterialComponents.DayNight">
         
         <item name="colorPrimary">@color/gray</item>
-        <item name="colorPrimaryVariant">@color/black</item>
+        <item name="colorPrimaryVariant">@color/gray_7</item>
         <item name="colorOnPrimary">@color/black</item>
         
-        <item name="colorSecondary">@color/black</item>
+        <item name="colorSecondary">@color/white_50</item>
         <item name="colorSecondaryVariant">@color/gray</item>
         <item name="colorOnSecondary">@color/black</item>
         

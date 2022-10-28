@@ -75,10 +75,11 @@ public class TransacaoAdapter extends
     @Override
     public void onBindViewHolder(TransacaoAdapter.ViewHolder holder, int position) {
         // Get the data model based on position
-        Map<String, Object> map = (Map<String, Object>) mTransacoes.get(position);
-        TransactionModel transacao = new TransactionModel(map.get("nome").toString(), Double.parseDouble(map.get("valor").toString()));
-        transacao.setData(map.get("data").toString());
-        transacao.setDeposito(Integer.valueOf(map.get("deposito").toString()));
+        TransactionModel transacao = mTransacoes.get(position);
+        //Map<String, Object> map = (Map<String, Object>) mTransacoes.get(position);
+        //TransactionModel transacao = new TransactionModel(map.get("nome").toString(), Double.parseDouble(map.get("valor").toString()));
+        //transacao.setData(map.get("data").toString());
+        //transacao.setDeposito(Integer.valueOf(map.get("deposito").toString()));
 
         // Set item views based on your views and data model
         TextView textView = holder.text_nome_transacao;

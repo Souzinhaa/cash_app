@@ -35,6 +35,22 @@ public class TransactionModel {
         this.data = data;
     }
 
+    public Integer getDataMonth(){
+        if(data != null){
+            String[] dataDividida = data.split("/");
+            return Integer.parseInt(dataDividida[1]);
+        }
+        return null;
+    }
+
+    public Integer getDataYear(){
+        if(data != null){
+            String[] dataDividida = data.split("/");
+            return Integer.parseInt(dataDividida[2]);
+        }
+        return null;
+    }
+
     public Integer isDeposito() {
         return isDeposito;
     }

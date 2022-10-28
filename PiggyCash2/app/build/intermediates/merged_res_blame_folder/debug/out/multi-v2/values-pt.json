@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.fho.piggycash.app-mergeDebugResources-32:/values-pt/values-pt.xml",
+            "outputFile": "com.fho.piggycash.app-mergeDebugResources-33:/values-pt/values-pt.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Bruno\\.gradle\\caches\\transforms-3\\d33a41edb58f2fa3d03fe34ee34433c7\\transformed\\browser-1.4.0\\res\\values-pt\\values-pt.xml",
