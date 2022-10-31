@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">194571898406-13arh9kkgg92egp0skstlq88jlqucjnk.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">194571898406</string>
+    <string name="google_api_key" translatable="false">AIzaSyAVDk2LqSUJRfGV3i8HWKt8_oLUwvu7Na4</string>
+    <string name="google_app_id" translatable="false">1:194571898406:android:2724e5e26253038b8620e7</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAVDk2LqSUJRfGV3i8HWKt8_oLUwvu7Na4</string>
+    <string name="google_storage_bucket" translatable="false">piggy-cash-c9be0.appspot.com</string>
+    <string name="project_id" translatable="false">piggy-cash-c9be0</string>
+</resources>

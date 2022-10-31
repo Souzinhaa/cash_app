@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/light_blue"
+    tools:context=".screen.MainActivity">
+
+    <TextView
+        android:id="@+id/text_titulo"
+        style="@style/TextLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_nome_transacao"
+        style="@style/TextLogin"
+        android:text="@string/nome_transacao"
+        android:layout_marginLeft="@dimen/vintesp"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_titulo" />
+
+    <EditText
+        android:id="@+id/edit_nome"
+        style="@style/EditTextLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5sp"
+        android:layout_marginRight="@dimen/vintesp"
+        android:layout_marginLeft="@dimen/vintesp"
+        android:hint="@string/hint_nome_transacao"
+        android:inputType="text"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_nome_transacao" />
+
+    <TextView
+        android:id="@+id/text_valor_transacao"
+        style="@style/TextLogin"
+        android:text="@string/valor_transacao"
+        android:layout_marginLeft="@dimen/vintesp"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_nome" />
+
+    <EditText
+        android:id="@+id/edit_valor"
+        style="@style/EditTextLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5sp"
+        android:layout_marginRight="@dimen/vintesp"
+        android:layout_marginLeft="@dimen/vintesp"
+        android:hint="@string/hint_valor"
+        android:maxLength="12"
+        android:inputType="numberDecimal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_valor_transacao" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_cadastrar"
+        android:background="@drawable/button_background"
+        android:text="@string/Cadastrar"
+        style="@style/ButtonLogin"
+        android:layout_marginTop="40sp"
+        android:layout_marginBottom="20sp"
+        app:layout_constraintTop_toBottomOf="@id/edit_valor"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:visibility="invisible"
+        android:layout_height="40sp"
+        android:layout_width="40sp"
+        android:indeterminateTint="@color/button_color"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/bt_cadastrar"/>
+
+    <TextView
+        android:id="@+id/text_bottom"
+        android:text="@string/nome_transacao"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/bt_cadastrar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

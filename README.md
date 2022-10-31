@@ -1,4 +1,4 @@
-# Piggy Cash
+# Cash App
 Essa aplicação tem como objetivo dar ao usuario controle financeiro de seus gastos com relatorios e etc.
 
 ## Design Prototipo
