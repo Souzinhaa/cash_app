@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml:2:1-43:12
-INJECTED from C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml:2:1-43:12
-INJECTED from C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml:2:1-43:12
-INJECTED from C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml:2:1-43:12
+ADDED from C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml:2:1-43:12
 MERGED from [com.google.android.material:material:1.7.0] C:\Users\Bruno\.gradle\caches\transforms-3\a43913465a7046b6ede2cc444d0a5f3d\transformed\material-1.7.0\AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\Bruno\.gradle\caches\transforms-3\316225dc7362f218cf7ef7d82990e173\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
 MERGED from [com.github.kal72:RackMonthPicker:1.6.1] C:\Users\Bruno\.gradle\caches\transforms-3\1754c0455faa0c094328ba932299551b\transformed\RackMonthPicker-1.6.1\AndroidManifest.xml:2:1-17:12
@@ -74,27 +74,27 @@ MERGED from [androidx.print:print:1.0.0] C:\Users\Bruno\.gradle\caches\transform
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\Bruno\.gradle\caches\transforms-3\294ce4756884f83db0ec41d640c8fc3e\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\Bruno\.gradle\caches\transforms-3\53d9dcccbb4733807bd36ca154114fa2\transformed\protolite-well-known-types-18.0.0\AndroidManifest.xml:2:1-11:12
 MERGED from [io.grpc:grpc-android:1.48.1] C:\Users\Bruno\.gradle\caches\transforms-3\07b8a1999c078d28ad8f2557e3ddb2de\transformed\grpc-android-1.48.1\AndroidManifest.xml:2:1-11:12
-INJECTED from C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml:2:1-43:12
-INJECTED from C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml:2:1-43:12
-INJECTED from C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml:2:1-43:12
 	package
-		INJECTED from C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml:2:1-43:12
-		INJECTED from C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml:2:1-43:12
+		INJECTED from C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml:2:1-43:12
-		INJECTED from C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml:2:1-43:12
+		INJECTED from C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml
 	xmlns:tools
-		ADDED from C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml:3:5-51
+		ADDED from C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
-		INJECTED from C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml:2:1-43:12
-		INJECTED from C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml:2:1-43:12
+		INJECTED from C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml:5:5-67
+ADDED from C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml:5:5-67
 MERGED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\Bruno\.gradle\caches\transforms-3\b0f0b8cb850456cb44a157638474ec2b\transformed\firebase-auth-21.1.0\AndroidManifest.xml:23:5-67
 MERGED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\Bruno\.gradle\caches\transforms-3\b0f0b8cb850456cb44a157638474ec2b\transformed\firebase-auth-21.1.0\AndroidManifest.xml:23:5-67
 MERGED from [com.google.firebase:firebase-firestore:24.4.0] C:\Users\Bruno\.gradle\caches\transforms-3\f36baaa0f6a55d275a0372e8c2fd4630\transformed\firebase-firestore-24.4.0\AndroidManifest.xml:13:5-67
@@ -112,9 +112,9 @@ MERGED from [com.google.android.gms:play-services-measurement-impl:21.1.1] C:\Us
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.1.1] C:\Users\Bruno\.gradle\caches\transforms-3\955bc6b18bf138957a060598c8569d87\transformed\play-services-measurement-sdk-api-21.1.1\AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.1.1] C:\Users\Bruno\.gradle\caches\transforms-3\955bc6b18bf138957a060598c8569d87\transformed\play-services-measurement-sdk-api-21.1.1\AndroidManifest.xml:23:5-67
 	android:name
-		ADDED from C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml:5:22-64
+		ADDED from C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml:5:22-64
 application
-ADDED from C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml:6:5-41:19
+ADDED from C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml:6:5-41:19
 MERGED from [com.google.android.material:material:1.7.0] C:\Users\Bruno\.gradle\caches\transforms-3\a43913465a7046b6ede2cc444d0a5f3d\transformed\material-1.7.0\AndroidManifest.xml:24:5-20
 MERGED from [com.google.android.material:material:1.7.0] C:\Users\Bruno\.gradle\caches\transforms-3\a43913465a7046b6ede2cc444d0a5f3d\transformed\material-1.7.0\AndroidManifest.xml:24:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\Bruno\.gradle\caches\transforms-3\316225dc7362f218cf7ef7d82990e173\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -176,71 +176,71 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Bruno\.gradle\cach
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.8.0] C:\Users\Bruno\.gradle\caches\transforms-3\a3aef3274c222e47595fbfeb9137a19e\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml:14:9-35
+		ADDED from C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml:14:9-35
 	android:label
-		ADDED from C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml:12:9-41
+		ADDED from C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml:12:9-41
 	android:fullBackupContent
-		ADDED from C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml:10:9-54
+		ADDED from C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml:10:9-54
 	android:roundIcon
-		ADDED from C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml:13:9-56
+		ADDED from C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml:13:9-56
 	tools:targetApi
-		ADDED from C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml:17:9-29
+		ADDED from C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml:17:9-29
 	android:icon
-		ADDED from C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml:11:9-43
+		ADDED from C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml:11:9-43
 	android:allowBackup
-		ADDED from C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml:7:9-35
+		ADDED from C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml:7:9-35
 	android:theme
-		ADDED from C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml:16:9-47
+		ADDED from C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml:16:9-47
 	android:enableOnBackInvokedCallback
-		ADDED from C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml:15:9-51
+		ADDED from C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml:15:9-51
 	android:dataExtractionRules
-		ADDED from C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml:9:9-65
+		ADDED from C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml:9:9-65
 	android:usesCleartextTraffic
-		ADDED from C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml:8:9-44
-activity#com.fho.piggycash.screen.SignInScreen
-ADDED from C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml:18:9-24:20
+		ADDED from C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml:8:9-44
+activity#com.fho.piggycash.screen.activity.ActivitySignUp
+ADDED from C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml:18:9-24:20
 	android:exported
-		ADDED from C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml:20:13-37
+		ADDED from C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml:20:13-37
 	android:name
-		ADDED from C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml:19:13-48
+		ADDED from C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml:19:13-59
 meta-data#android.app.lib_name
-ADDED from C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml:21:13-23:36
+ADDED from C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml:21:13-23:36
 	android:value
-		ADDED from C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml:23:17-33
+		ADDED from C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml:23:17-33
 	android:name
-		ADDED from C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml:22:17-52
-activity#com.fho.piggycash.screen.MainActivity
-ADDED from C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml:25:9-27:40
+		ADDED from C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml:22:17-52
+activity#com.fho.piggycash.screen.activity.ActivityMain
+ADDED from C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml:25:9-27:40
 	android:exported
-		ADDED from C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml:27:13-37
+		ADDED from C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml:27:13-37
 	android:name
-		ADDED from C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml:26:13-48
-activity#com.fho.piggycash.screen.LoginScreen
-ADDED from C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml:28:9-36:20
+		ADDED from C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml:26:13-57
+activity#com.fho.piggycash.screen.activity.ActivityLogin
+ADDED from C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml:28:9-36:20
 	android:exported
-		ADDED from C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml:30:13-36
+		ADDED from C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml:30:13-36
 	android:name
-		ADDED from C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml:29:13-47
+		ADDED from C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml:29:13-58
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml:31:13-35:29
+ADDED from C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml:31:13-35:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml:32:17-69
+ADDED from C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml:32:17-69
 	android:name
-		ADDED from C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml:32:25-66
+		ADDED from C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml:32:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml:34:17-77
+ADDED from C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml:34:17-77
 	android:name
-		ADDED from C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml:34:27-74
+		ADDED from C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml:34:27-74
 meta-data#preloaded_fonts
-ADDED from C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml:38:9-40:57
+ADDED from C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml:38:9-40:57
 	android:resource
-		ADDED from C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml:40:13-54
+		ADDED from C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml:40:13-54
 	android:name
-		ADDED from C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml:39:13-43
+		ADDED from C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml:39:13-43
 uses-sdk
-INJECTED from C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml
 MERGED from [com.google.android.material:material:1.7.0] C:\Users\Bruno\.gradle\caches\transforms-3\a43913465a7046b6ede2cc444d0a5f3d\transformed\material-1.7.0\AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.android.material:material:1.7.0] C:\Users\Bruno\.gradle\caches\transforms-3\a43913465a7046b6ede2cc444d0a5f3d\transformed\material-1.7.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\Bruno\.gradle\caches\transforms-3\316225dc7362f218cf7ef7d82990e173\transformed\constraintlayout-2.1.4\AndroidManifest.xml:5:5-7:41
@@ -381,16 +381,16 @@ MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\Bru
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\Bruno\.gradle\caches\transforms-3\53d9dcccbb4733807bd36ca154114fa2\transformed\protolite-well-known-types-18.0.0\AndroidManifest.xml:7:5-9:41
 MERGED from [io.grpc:grpc-android:1.48.1] C:\Users\Bruno\.gradle\caches\transforms-3\07b8a1999c078d28ad8f2557e3ddb2de\transformed\grpc-android-1.48.1\AndroidManifest.xml:5:5-7:41
 MERGED from [io.grpc:grpc-android:1.48.1] C:\Users\Bruno\.gradle\caches\transforms-3\07b8a1999c078d28ad8f2557e3ddb2de\transformed\grpc-android-1.48.1\AndroidManifest.xml:5:5-7:41
-INJECTED from C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\Bruno\.gradle\caches\transforms-3\b0f0b8cb850456cb44a157638474ec2b\transformed\firebase-auth-21.1.0\AndroidManifest.xml:24:5-79
 MERGED from [com.google.firebase:firebase-firestore:24.4.0] C:\Users\Bruno\.gradle\caches\transforms-3\f36baaa0f6a55d275a0372e8c2fd4630\transformed\firebase-firestore-24.4.0\AndroidManifest.xml:12:5-79

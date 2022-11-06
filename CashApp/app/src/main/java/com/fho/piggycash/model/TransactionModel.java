@@ -1,68 +1,95 @@
 package com.fho.piggycash.model;
 
-public class TransactionModel {
-    private String nome;
-    private double valor;
-    private String data;
-    private Integer isDeposito;
+import com.google.firebase.firestore.Exclude;
 
-    public TransactionModel(String nome, double valor) {
-        this.nome = nome;
-        this.valor = valor;
+public class TransactionModel implements Comparable<TransactionModel> {
+    private String name;
+    private double value;
+    private String date;
+    private Integer isDeposit;
+
+    public TransactionModel(String name, double value) {
+        this.name = name;
+        this.value = value;
     }
 
-    public String getNome() {
-        return nome;
+    public TransactionModel(String name, double value, String date) {
+        this.name = name;
+        this.value = value;
+        this.date = date;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public String getName() {
+        return name;
     }
 
-    public double getValor() {
-        return valor;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public void setValor(double valor) {
-        this.valor = valor;
+    public double getValue() {
+        return value;
     }
 
-    public String getData() {
-        return data;
+    public void setValue(double value) {
+        this.value = value;
     }
 
-    public void setData(String data) {
-        this.data = data;
+    public String getDate() {
+        return date;
     }
 
-    public Integer getDataMonth(){
-        if(data != null){
-            String[] dataDividida = data.split("/");
-            return Integer.parseInt(dataDividida[1]);
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    @Exclude
+    public Integer getDateDay(){
+        if(date != null){
+            String[] dateDividida = date.split("/");
+            return Integer.parseInt(dateDividida[0]);
         }
         return null;
     }
 
-    public Integer getDataYear(){
-        if(data != null){
-            String[] dataDividida = data.split("/");
-            return Integer.parseInt(dataDividida[2]);
+    @Exclude
+    public Integer getDateMonth(){
+        if(date != null){
+            String[] dateDividida = date.split("/");
+            return Integer.parseInt(dateDividida[1]);
         }
         return null;
     }
 
-    public Integer isDeposito() {
-        return isDeposito;
+    @Exclude
+    public Integer getDateYear(){
+        if(date != null){
+            String[] dateDividida = date.split("/");
+            return Integer.parseInt(dateDividida[2]);
+        }
+        return null;
     }
 
-    public boolean valueIsDeposito() {
-        if(isDeposito == 1)
-            return true;
-
-        return false;
+    public Integer isDeposit() {
+        return isDeposit;
     }
 
-    public void setDeposito(Integer deposito) {
-        isDeposito = deposito;
+    public boolean valueIsDeposit() {
+        return isDeposit == 1;
+    }
+
+    public void setDeposit(Integer deposit) {
+        isDeposit = deposit;
+    }
+
+    @Exclude
+    @Override
+    public int compareTo(TransactionModel other) {
+        if(this.getDateDay() > other.getDateDay())
+            return -1;
+        else if (this.getDateDay() < other.getDateDay())
+            return 1;
+
+        return 0;
     }
 }

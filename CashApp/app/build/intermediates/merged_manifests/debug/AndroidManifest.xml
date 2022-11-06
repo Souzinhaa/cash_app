@@ -30,17 +30,17 @@
         android:theme="@style/Theme.PiggyCash"
         android:usesCleartextTraffic="true" >
         <activity
-            android:name="com.fho.piggycash.screen.SignInScreen"
+            android:name="com.fho.piggycash.screen.activity.ActivitySignUp"
             android:exported="false" >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name="com.fho.piggycash.screen.MainActivity"
+            android:name="com.fho.piggycash.screen.activity.ActivityMain"
             android:exported="false" />
         <activity
-            android:name="com.fho.piggycash.screen.LoginScreen"
+            android:name="com.fho.piggycash.screen.activity.ActivityLogin"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -1,7 +1,12 @@
 <resources>
     <string name="app_name">CashApp</string>
-    <string name="piggy">Cash</string>
-    <string name="cash">App</string>
+    <string name="cash">Cash</string>
+    <string name="app">App</string>
+    <string name="desc_logo">Imagem logo</string>
+    <string name="home">Botão tela principal</string>
+    <string name="profile">Botão tela de Perfil</string>
+    <string name="profile_img">Imagem de Perfil</string>
+    <string name="card">Cartão com saldo</string>
     <string name="saldo">Saldo Restante</string>
     <string name="saldo_exemplo">R$ 98200</string>
     <string name="adicionar_dinheiro">Adicionar</string>
@@ -17,16 +22,21 @@
     <string name="nome">Nome</string>
     <string name="login">Login</string>
     <string name="sair">Sair</string>
-    <string name="cadastrar_transacao">Cadastrar Nova Transação</string>
-    <string name="nome_transacao">Nome Transação</string>
-    <string name="valor_transacao">Valor Transação</string>
+    <string name="cadastrar_transaction">Cadastrar Nova Transação</string>
+    <string name="nome_transaction">Nome Transação</string>
+    <string name="valor_transaction">Valor Transação</string>
+    <string name="data_transaction">Data Transação</string>
     <string name="Cadastrar">Cadastrar</string>
     <string name="hint_valor">R$1.000,00</string>
-    <string name="hint_nome_transacao">Lanche na Padaria do seu Zé</string>
+    <string name="hint_data">10/10/2022</string>
+    <string name="hint_nome_transaction">Lanche na Padaria do seu Zé</string>
     <string name="cadastro">Cadastre-se</string>
     <string name="perfil">Perfil</string>
     <string name="inicio">Início</string>
     <string name="subtitulo">Controle financeiro na palma da mão</string>
+    <string name="dica_senha">*a senha deve ter 6 dígitos</string>
+
+    <string name="ja_login">Já possui cadastro? Faça o Login</string>
 
 
     <string name="novo_deposito">Novo Depósito</string>
@@ -34,4 +44,5 @@
 
     <string name="deposito_recebido">Depósito Recebido</string>
     <string name="retirada_confirmada">Retirada Confirmada</string>
+    <string name="todo">TODO</string>
 </resources>

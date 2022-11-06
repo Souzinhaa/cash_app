@@ -6,13 +6,13 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="26"
-8-->C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml
+8-->C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="33" />
-9-->C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml
+9-->C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml:5:5-67
-11-->C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml:5:22-64
+11-->C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml:5:5-67
+11-->C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml:5:22-64
 12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 12-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Bruno\.gradle\caches\transforms-3\b0f0b8cb850456cb44a157638474ec2b\transformed\firebase-auth-21.1.0\AndroidManifest.xml:24:5-79
 12-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Bruno\.gradle\caches\transforms-3\b0f0b8cb850456cb44a157638474ec2b\transformed\firebase-auth-21.1.0\AndroidManifest.xml:24:22-76
@@ -27,75 +27,75 @@
 15-->[com.google.android.gms:play-services-measurement:21.1.1] C:\Users\Bruno\.gradle\caches\transforms-3\e4ef4719f34e687b32f4aced23eba5d2\transformed\play-services-measurement-21.1.1\AndroidManifest.xml:26:22-107
 16
 17    <application
-17-->C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml:6:5-41:19
+17-->C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml:6:5-41:19
 18        android:allowBackup="true"
-18-->C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml:7:9-35
+18-->C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml:7:9-35
 19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 19-->[androidx.core:core:1.8.0] C:\Users\Bruno\.gradle\caches\transforms-3\a3aef3274c222e47595fbfeb9137a19e\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
 20        android:dataExtractionRules="@xml/data_extraction_rules"
-20-->C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml:9:9-65
+20-->C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml:9:9-65
 21        android:debuggable="true"
 22        android:enableOnBackInvokedCallback="true"
-22-->C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml:15:9-51
+22-->C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml:15:9-51
 23        android:extractNativeLibs="false"
 24        android:fullBackupContent="@xml/backup_rules"
-24-->C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml:10:9-54
+24-->C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml:10:9-54
 25        android:icon="@mipmap/ic_launcher"
-25-->C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml:11:9-43
+25-->C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml:11:9-43
 26        android:label="@string/app_name"
-26-->C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml:12:9-41
+26-->C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml:12:9-41
 27        android:roundIcon="@mipmap/ic_launcher_s_round"
-27-->C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml:13:9-56
+27-->C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml:13:9-56
 28        android:supportsRtl="true"
-28-->C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml:14:9-35
+28-->C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml:14:9-35
 29        android:testOnly="true"
 30        android:theme="@style/Theme.PiggyCash"
-30-->C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml:16:9-47
+30-->C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml:16:9-47
 31        android:usesCleartextTraffic="true" >
-31-->C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml:8:9-44
+31-->C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml:8:9-44
 32        <activity
-32-->C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml:18:9-24:20
-33            android:name="com.fho.piggycash.screen.SignInScreen"
-33-->C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml:19:13-48
+32-->C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml:18:9-24:20
+33            android:name="com.fho.piggycash.screen.activity.ActivitySignUp"
+33-->C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml:19:13-59
 34            android:exported="false" >
-34-->C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml:20:13-37
+34-->C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml:20:13-37
 35            <meta-data
-35-->C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml:21:13-23:36
+35-->C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml:21:13-23:36
 36                android:name="android.app.lib_name"
-36-->C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml:22:17-52
+36-->C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml:22:17-52
 37                android:value="" />
-37-->C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml:23:17-33
+37-->C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml:23:17-33
 38        </activity>
 39        <activity
-39-->C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml:25:9-27:40
-40            android:name="com.fho.piggycash.screen.MainActivity"
-40-->C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml:26:13-48
+39-->C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml:25:9-27:40
+40            android:name="com.fho.piggycash.screen.activity.ActivityMain"
+40-->C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml:26:13-57
 41            android:exported="false" />
-41-->C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml:27:13-37
+41-->C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml:27:13-37
 42        <activity
-42-->C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml:28:9-36:20
-43            android:name="com.fho.piggycash.screen.LoginScreen"
-43-->C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml:29:13-47
+42-->C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml:28:9-36:20
+43            android:name="com.fho.piggycash.screen.activity.ActivityLogin"
+43-->C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml:29:13-58
 44            android:exported="true" >
-44-->C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml:30:13-36
+44-->C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml:30:13-36
 45            <intent-filter>
-45-->C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml:31:13-35:29
+45-->C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml:31:13-35:29
 46                <action android:name="android.intent.action.MAIN" />
-46-->C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml:32:17-69
-46-->C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml:32:25-66
+46-->C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml:32:17-69
+46-->C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml:32:25-66
 47
 48                <category android:name="android.intent.category.LAUNCHER" />
-48-->C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml:34:17-77
-48-->C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml:34:27-74
+48-->C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml:34:17-77
+48-->C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml:34:27-74
 49            </intent-filter>
 50        </activity>
 51
 52        <meta-data
-52-->C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml:38:9-40:57
+52-->C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml:38:9-40:57
 53            android:name="preloaded_fonts"
-53-->C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml:39:13-43
+53-->C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml:39:13-43
 54            android:resource="@array/preloaded_fonts" />
-54-->C:\Users\Bruno\Documents\Android\piggy_cash\PiggyCash2\app\src\main\AndroidManifest.xml:40:13-54
+54-->C:\Users\Bruno\Documents\Android\cash_app\CashApp\app\src\main\AndroidManifest.xml:40:13-54
 55
 56        <activity
 56-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\Bruno\.gradle\caches\transforms-3\b0f0b8cb850456cb44a157638474ec2b\transformed\firebase-auth-21.1.0\AndroidManifest.xml:27:9-44:20

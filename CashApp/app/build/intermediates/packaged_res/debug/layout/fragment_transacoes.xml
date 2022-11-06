@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@color/light_blue"
-    tools:context=".screen.MainActivity">
+    tools:context=".screen.activity.ActivityMain">
 
     <TextView
-        android:id="@+id/text_titulo"
+        android:id="@+id/text_tittle"
         style="@style/TextLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -18,15 +18,15 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/text_nome_transacao"
+        android:id="@+id/text_name_transaction"
         style="@style/TextLogin"
-        android:text="@string/nome_transacao"
-        android:layout_marginLeft="@dimen/vintesp"
+        android:text="@string/nome_transaction"
+        android:layout_marginStart="@dimen/vintesp"
         android:textSize="16sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/text_titulo" />
+        app:layout_constraintTop_toBottomOf="@id/text_tittle" />
 
     <EditText
         android:id="@+id/edit_nome"
@@ -36,17 +36,19 @@
         android:layout_marginTop="5sp"
         android:layout_marginRight="@dimen/vintesp"
         android:layout_marginLeft="@dimen/vintesp"
-        android:hint="@string/hint_nome_transacao"
+        android:hint="@string/hint_nome_transaction"
         android:inputType="text"
+        android:gravity="center"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/text_nome_transacao" />
+        app:layout_constraintTop_toBottomOf="@id/text_name_transaction"
+        android:autofillHints="no" />
 
     <TextView
-        android:id="@+id/text_valor_transacao"
+        android:id="@+id/text_value_transaction"
         style="@style/TextLogin"
-        android:text="@string/valor_transacao"
-        android:layout_marginLeft="@dimen/vintesp"
+        android:text="@string/valor_transaction"
+        android:layout_marginStart="@dimen/vintesp"
         android:textSize="16sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -64,9 +66,39 @@
         android:hint="@string/hint_valor"
         android:maxLength="12"
         android:inputType="numberDecimal"
+        android:gravity="center"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/text_valor_transacao" />
+        app:layout_constraintTop_toBottomOf="@id/text_value_transaction"
+        android:autofillHints="no" />
+
+    <TextView
+        android:id="@+id/text_date"
+        style="@style/TextLogin"
+        android:text="@string/data_transaction"
+        android:layout_marginStart="@dimen/vintesp"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_valor" />
+
+    <EditText
+        android:id="@+id/edit_data"
+        style="@style/EditTextLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5sp"
+        android:layout_marginRight="@dimen/vintesp"
+        android:layout_marginLeft="@dimen/vintesp"
+        android:hint="@string/hint_data"
+        android:maxLength="10"
+        android:gravity="center"
+        android:inputType="date"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_date"
+        android:autofillHints="no" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/bt_cadastrar"
@@ -75,7 +107,7 @@
         style="@style/ButtonLogin"
         android:layout_marginTop="40sp"
         android:layout_marginBottom="20sp"
-        app:layout_constraintTop_toBottomOf="@id/edit_valor"
+        app:layout_constraintTop_toBottomOf="@id/edit_data"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"/>
 
@@ -91,7 +123,6 @@
 
     <TextView
         android:id="@+id/text_bottom"
-        android:text="@string/nome_transacao"
         android:visibility="invisible"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

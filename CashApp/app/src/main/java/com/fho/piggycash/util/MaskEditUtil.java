@@ -4,20 +4,11 @@ import android.text.Editable;
 import android.text.TextWatcher;
 import android.widget.EditText;
 
-import java.text.DecimalFormat;
 import java.text.NumberFormat;
 
 public abstract class MaskEditUtil<FORMAT_CASH_1> {
 
-    public static final String FORMAT_CPF = "###.###.###-##";
-    public static final String FORMAT_CPF_NONE = "###########";
-    public static final String FORMAT_CNPJ = "##.###.###/####-##";
-    public static final String FORMAT_FONE = "(##) #####-####";
-    public static final String FORMAT_CEP = "#####-###";
     public static final String FORMAT_DATE = "##/##/####";
-    public static final String FORMAT_DATE_MONTH_YEAR = "##/####";
-    public static final String FORMAT_HOUR = "##:##";
-
 
     public static final String FORMAT_CASH_1 = "R$x,x#";
     public static final String FORMAT_CASH_2 = "R$x,##";
@@ -31,15 +22,6 @@ public abstract class MaskEditUtil<FORMAT_CASH_1> {
 
     public static final String[] FORMAT_VALUE = {FORMAT_CASH_1,FORMAT_CASH_2,FORMAT_CASH_3,FORMAT_CASH_4,FORMAT_CASH_5,FORMAT_CASH_6,FORMAT_CASH_7,FORMAT_CASH_8, FORMAT_CASH_9};
 
-    public static final String FORMAT_CARD = "#### #### #### ####";
-
-    /**
-     * Método que deve ser chamado para realizar a formatação
-     *
-     * @param ediTxt
-     * @param mask
-     * @return
-     */
     public static TextWatcher mask(final EditText ediTxt, final String mask) {
         return new TextWatcher() {
             boolean isUpdating;
@@ -117,21 +99,21 @@ public abstract class MaskEditUtil<FORMAT_CASH_1> {
     }
 
     public static String valueHelper(String str, String mask, String old){
-        String mascara = "";
+        StringBuilder mascara = new StringBuilder();
         int i = 0;
         for (final char m : mask.toCharArray()) {
             if (m != '#' && str.length() > old.length()) {
-                mascara += m;
+                mascara.append(m);
                 continue;
             }
             try {
-                mascara += str.charAt(i);
+                mascara.append(str.charAt(i));
             } catch (final Exception e) {
                 break;
             }
             i++;
         }
-        return mascara;
+        return mascara.toString();
 
     }
 
@@ -140,10 +122,7 @@ public abstract class MaskEditUtil<FORMAT_CASH_1> {
     }
 
     public static String unmaskValue(final String s) {
-        String sub = s.replaceAll("[.]", "").replaceAll("[-]", "").replaceAll("[/]", "").replaceAll("[(]", "").replaceAll("[ ]","").replaceAll("[:]", "").replaceAll("[)]", "").replaceAll("[R$ ]","").replaceAll("[,]",".").replaceAll("[x]","0").replaceAll("[ ]","");
-        /*if(sub.equalsIgnoreCase(" 0.00") || sub.equalsIgnoreCase(" 0.00"))
-            sub = "0.0";*/
-        return sub;
+        return s.replaceAll("[.]", "").replaceAll("[-]", "").replaceAll("[/]", "").replaceAll("[(]", "").replaceAll("[ ]","").replaceAll("[:]", "").replaceAll("[)]", "").replaceAll("[R$ ]","").replaceAll("[,]",".").replaceAll("[x]","0").replaceAll("[ ]","");
     }
 
     public static String addValueMask(final Double textoAFormatar) {
