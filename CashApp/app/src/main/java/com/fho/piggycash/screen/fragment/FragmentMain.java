@@ -27,6 +27,9 @@ import com.kal.rackmonthpicker.RackMonthPicker;
 
 import java.util.Calendar;
 import java.util.Locale;
+import java.util.Timer;
+import java.util.TimerTask;
+import java.util.concurrent.TimeUnit;
 
 public class FragmentMain extends Fragment {
 
@@ -54,25 +57,20 @@ public class FragmentMain extends Fragment {
         if(recycler_view != null)
             showList();
 
+        Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                showList();
+                handler.postDelayed(this,500);
+            }
+        },500);
+
         bt_add.setOnClickListener(v -> showBottomSheetDialog(true));
 
         bt_remove.setOnClickListener(v -> showBottomSheetDialog(false));
 
-        bt_month.setOnClickListener(v -> {
-            RackMonthPicker monthPicker = new RackMonthPicker(requireActivity())
-                    .setLocale(Locale.ENGLISH)
-                    .setColorTheme(requireContext().getColor(R.color.blue))
-                    .setPositiveButton((month, startDate, endDate, year, monthLabel) -> {
-                        appService.updateMonthYear(month, year);
-                        showList();
-                        setMonthYear();
-                    })
-                    .setNegativeButton(dialog -> {
-                        ToastUtil.showToast(requireView(), "Filtro Cancelado");
-                        dialog.dismiss();
-                    });
-            monthPicker.show();
-        });
+        bt_month.setOnClickListener(v -> showMonthDatePicker());
     }
 
     @Override
@@ -132,6 +130,22 @@ public class FragmentMain extends Fragment {
         });
 
         bottomSheetDialog.show();
+    }
+
+    private void showMonthDatePicker(){
+        RackMonthPicker monthPicker = new RackMonthPicker(requireActivity())
+                .setLocale(Locale.ENGLISH)
+                .setColorTheme(requireContext().getColor(R.color.blue))
+                .setPositiveButton((month, startDate, endDate, year, monthLabel) -> {
+                    appService.updateMonthYear(month, year);
+                    showList();
+                    setMonthYear();
+                })
+                .setNegativeButton(dialog -> {
+                    ToastUtil.showToast(requireView(), "Filtro Cancelado");
+                    dialog.dismiss();
+                });
+        monthPicker.show();
     }
 
     @SuppressLint("SetTextI18n")

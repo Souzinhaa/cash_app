@@ -14,7 +14,9 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.fho.piggycash.R;
 import com.fho.piggycash.model.TransactionModel;
+import com.fho.piggycash.service.AppService;
 import com.fho.piggycash.util.MaskEditUtil;
+import com.fho.piggycash.util.ToastUtil;
 
 import java.util.List;
 
@@ -62,6 +64,15 @@ public class TransactionAdapter extends
     @Override
     public void onBindViewHolder(TransactionAdapter.ViewHolder holder, int position) {
         TransactionModel transaction = mTransactions.get(position);
+
+        View v = holder.view;
+        v.setOnTouchListener(new OnSwipeTouchListener(v.getContext()){
+            @Override
+            public void onSwipeLeft() {
+                super.onSwipeLeft();
+                AppService.getInstance().deleteTransaction(v, holder.getAdapterPosition());
+            }
+        });
 
         TextView textView = holder.text_name_transaction;
         textView.setText(transaction.getName());
